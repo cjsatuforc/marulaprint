@@ -1,4 +1,4 @@
-EESchema Schematic File Version 2  date Wed 10 Oct 2012 09:31:57 SAST
+EESchema Schematic File Version 2  date Thu 11 Oct 2012 15:21:49 SAST
 LIBS:power
 LIBS:device
 LIBS:transistors
@@ -32,13 +32,15 @@ LIBS:valves
 LIBS:marula-connector
 LIBS:marula-linear
 LIBS:marula-buffer
+LIBS:marula-port-expander
+LIBS:uiboard-cache
 EELAYER 25  0
 EELAYER END
 $Descr A3 16535 11693
 encoding utf-8
 Sheet 1 1
 Title "Marulaprint-ui"
-Date "10 oct 2012"
+Date "11 oct 2012"
 Rev "1"
 Comp "Marulaberry Projects"
 Comment1 ""
@@ -440,4 +442,22 @@ Connection ~ 9800 2350
 Wire Wire Line
 	10100 2450 9800 2450
 Connection ~ 9800 2450
+$Comp
+L PCF8574-PW U?
+U 1 1 5076BF3D
+P 2700 6450
+F 0 "U?" H 2050 7500 60  0000 C CNN
+F 1 "PCF8574-PW" H 2600 6250 60  0000 C CNN
+	1    2700 6450
+	1    0    0    -1  
+$EndComp
+$Comp
+L PCF8574-PW U?
+U 1 1 5076BF4A
+P 5500 6500
+F 0 "U?" H 4850 7550 60  0000 C CNN
+F 1 "PCF8574-PW" H 5400 6300 60  0000 C CNN
+	1    5500 6500
+	1    0    0    -1  
+$EndComp
 $EndSCHEMATC

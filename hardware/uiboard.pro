@@ -1,8 +1,8 @@
-update=Wed 10 Oct 2012 09:30:00 SAST
+update=Thu 11 Oct 2012 14:39:32 SAST
 last_client=eeschema
 [eeschema]
 version=1
-LibDir=../lib
+LibDir=../../kicad-lib
 NetFmtName=
 HPGLSpd=20
 HPGLDm=15
@@ -45,3 +45,4 @@ LibName30=valves
 LibName31=marula-connector
 LibName32=marula-linear
 LibName33=marula-buffer
+LibName34=marula-port-expander
