@@ -1,2 +1,7 @@
 private
 hardware/$*
+hardware/*-cache.lib
+hardware/*.000
+hardware/*.bak
+
+
