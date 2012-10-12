@@ -1,4 +1,4 @@
-update=Thu 11 Oct 2012 14:39:32 SAST
+update=Fri 12 Oct 2012 12:15:26 SAST
 last_client=eeschema
 [eeschema]
 version=1
@@ -46,3 +46,4 @@ LibName31=marula-connector
 LibName32=marula-linear
 LibName33=marula-buffer
 LibName34=marula-port-expander
+LibName35=marula-lcd
