@@ -1,4 +1,4 @@
-EESchema Schematic File Version 2  date Fri 12 Oct 2012 12:46:43 SAST
+EESchema Schematic File Version 2  date Fri 12 Oct 2012 16:08:19 SAST
 LIBS:power
 LIBS:device
 LIBS:transistors
@@ -145,9 +145,9 @@ F 1 "HEF4050B" H 1700 3650 60  0000 C CNN
 	1    1650 4150
 	1    0    0    -1  
 $EndComp
-Text Label 7050 4200 2    60   ~ 0
+Text Label 7400 4000 2    60   ~ 0
 ENCODE_1
-Text Label 7050 4300 2    60   ~ 0
+Text Label 7400 4100 2    60   ~ 0
 ENCODE_2
 Text Notes 1950 7650 2    60   ~ 0
 NOTE: should we add a buzzer
@@ -253,9 +253,9 @@ Wire Wire Line
 Wire Wire Line
 	800  1450 800  1300
 Wire Wire Line
-	6450 4200 7050 4200
+	6800 4000 7400 4000
 Wire Wire Line
-	6450 4300 7050 4300
+	6800 4100 7400 4100
 Wire Wire Line
 	2950 4750 2800 4750
 Wire Wire Line
@@ -305,10 +305,10 @@ Connection ~ 850  4500
 $Comp
 L PCF8574-PW U?
 U 1 1 5076BF3D
-P 8800 4600
-F 0 "U?" H 8150 5650 60  0000 C CNN
-F 1 "PCF8574-PW" H 8700 4400 60  0000 C CNN
-	1    8800 4600
+P 5550 4700
+F 0 "U?" H 4900 5750 60  0000 C CNN
+F 1 "PCF8574-PW" H 5450 4500 60  0000 C CNN
+	1    5550 4700
 	1    0    0    -1  
 $EndComp
 $Comp
@@ -325,7 +325,7 @@ L IDC-10-WAY P?
 U 1 1 5077EB75
 P 5400 1700
 F 0 "P?" H 5400 1950 30  0000 C CNN
-F 1 "DRIVER" H 5400 1350 30  0000 C CNN
+F 1 "DRIVER BOARD" H 5400 1350 30  0000 C CNN
 	1    5400 1700
 	1    0    0    -1  
 $EndComp
@@ -350,7 +350,7 @@ Wire Wire Line
 Wire Wire Line
 	5250 1950 4950 1950
 Text Label 4950 1650 0    60   ~ 0
-SDSS
+SD_CS
 Text Label 4950 1750 0    60   ~ 0
 SW1
 Text Label 4950 1850 0    60   ~ 0
@@ -639,4 +639,6 @@ Wire Notes Line
 	4100 3200 4100 5400
 Text Notes 6350 3450 0    60   ~ 12
 Rotary Encoder
+Text Notes 6350 4450 0    60   ~ 0
+Still have to figure out the input interface.\nRotary encoder or capacitive touch or 3x4 \nkeypad matrix
 $EndSCHEMATC
