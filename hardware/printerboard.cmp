@@ -1,4 +1,4 @@
-Cmp-Mod V01 Created by CvPcb (2012-10-20 BZR 3721)-testing date = Sat 27 Oct 2012 07:09:00 SAST
+Cmp-Mod V01 Created by CvPcb (2012-10-20 BZR 3721)-testing date = Sun 11 Nov 2012 10:00:44 SAST
 
 BeginCmp
 TimeStamp = /506E8B5D;
@@ -1530,7 +1530,7 @@ BeginCmp
 TimeStamp = /506D47EF;
 Reference = U6;
 ValeurCmp = FT232RL;
-IdModule  = SSOP28;
+IdModule  = SSOP28-M;
 EndCmp
 
 BeginCmp
@@ -1544,7 +1544,7 @@ BeginCmp
 TimeStamp = /5070880C;
 Reference = X1;
 ValeurCmp = 16Mhz;
-IdModule  = CRYSTAL-SM;
+IdModule  = HC-49V;
 EndCmp
 
 EndListe

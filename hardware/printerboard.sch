@@ -1,4 +1,4 @@
-EESchema Schematic File Version 2  date Thu 08 Nov 2012 14:58:17 SAST
+EESchema Schematic File Version 2  date Sun 11 Nov 2012 13:26:05 SAST
 LIBS:power
 LIBS:device
 LIBS:transistors
@@ -45,7 +45,7 @@ $Descr A2 23386 16535
 encoding utf-8
 Sheet 1 1
 Title "Marulaprint"
-Date "8 nov 2012"
+Date "9 nov 2012"
 Rev "1"
 Comp "Marulaberry Projects"
 Comment1 ""
@@ -4627,15 +4627,15 @@ Wire Wire Line
 Wire Wire Line
 	3100 13800 3100 14350
 Wire Wire Line
-	2600 3750 2750 3750
+	2600 3750 2900 3750
 Wire Wire Line
-	7050 3750 7200 3750
+	7050 3750 7350 3750
 Wire Wire Line
-	11500 3750 11650 3750
+	11500 3750 11800 3750
 Wire Wire Line
-	16000 3750 16150 3750
+	16000 3750 16300 3750
 Wire Wire Line
-	20500 3800 20650 3800
+	20500 3800 20800 3800
 $Comp
 L C C24
 U 1 1 50786816
@@ -5595,4 +5595,14 @@ Text Label 3650 7850 2    60   ~ 0
 MOS3
 Text Label 3650 8450 2    60   ~ 0
 MOS4
+Wire Wire Line
+	2900 3750 2900 3650
+Wire Wire Line
+	7350 3750 7350 3650
+Wire Wire Line
+	11800 3750 11800 3650
+Wire Wire Line
+	16300 3750 16300 3650
+Wire Wire Line
+	20800 3800 20800 3700
 $EndSCHEMATC

@@ -1,4 +1,4 @@
-update=Tue 23 Oct 2012 12:56:36 SAST
+update=Sun 11 Nov 2012 09:56:18 SAST
 version=1
 last_client=pcbnew
 [cvpcb]
@@ -62,9 +62,9 @@ LibName39=marula-passive
 [pcbnew]
 version=1
 LastNetListRead=printerboard.net
-PadDrill=1,2
-PadSizeH=2
-PadSizeV=2
+PadDrill=0
+PadSizeH=0,4064
+PadSizeV=1,27
 PcbTextSizeV=1
 PcbTextSizeH=1
 PcbTextThickness=0,3
@@ -101,3 +101,4 @@ LibName21=bolt
 LibName22=screw
 LibName23=marula-switch
 LibName24=marula-passive
+LibName25=marula-cms
