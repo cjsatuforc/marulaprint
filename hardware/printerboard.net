@@ -1,4 +1,4 @@
-# EESchema Netlist Version 1.1 created  Thu 15 Nov 2012 09:05:34 SAST
+# EESchema Netlist Version 1.1 created  Thu 15 Nov 2012 10:39:44 SAST
 (
  ( /506D4CF7 $noname  P5 ISP {Lib=CONN_3X2}
   (    1 /MISO )
@@ -30,7 +30,7 @@
  )
  ( /506D47EF $noname  U6 FT232RL {Lib=FT232RL}
   (    1 /RXD )
-  (    2 N-000103 )
+  (    2 N-000102 )
   (    3 ? )
   (    4 /VBUS )
   (    5 /TXD )
@@ -49,8 +49,8 @@
   (   19 ? )
   (   20 /VBUS )
   (   21 GND )
-  (   22 N-000101 )
-  (   23 N-000100 )
+  (   22 N-000100 )
+  (   23 N-000099 )
   (   25 GND )
   (   26 GND )
   (   27 ? )
@@ -129,12 +129,12 @@
   (    2 N-000137 )
  )
  ( /506EB999 $noname  C41 100n {Lib=C}
-  (    1 N-000096 )
-  (    2 N-000103 )
+  (    1 N-000095 )
+  (    2 N-000102 )
  )
  ( /506EBC43 $noname  JP6 AUTO_RST {Lib=CONN_2}
   (    1 /RST )
-  (    2 N-000096 )
+  (    2 N-000095 )
  )
  ( /50705A08 $noname  C45 1000u/50V/0.1R {Lib=CP1}
   (    1 VPP )
@@ -1171,19 +1171,19 @@
   (    2 /RST )
  )
  ( /50A10287 $noname  D16 RX {Lib=LED}
-  (    1 N-000099 )
-  (    2 N-000101 )
- )
- ( /50A102AD $noname  D17 TX {Lib=LED}
   (    1 N-000098 )
   (    2 N-000100 )
  )
+ ( /50A102AD $noname  D17 TX {Lib=LED}
+  (    1 N-000097 )
+  (    2 N-000099 )
+ )
  ( /50A102D6 $noname  R90 R {Lib=R}
-  (    1 N-000099 )
+  (    1 N-000098 )
   (    2 /VBUS )
  )
  ( /50A102DC $noname  R91 R {Lib=R}
-  (    1 N-000098 )
+  (    1 N-000097 )
   (    2 /VBUS )
  )
  ( /50A20A5D $noname  R21 R {Lib=R}
@@ -1195,12 +1195,12 @@
   (    2 GND )
  )
  ( /50A49CDA $noname  P12 MINIFIT-6-WAY {Lib=MINIFIT-6-WAY}
-  (    1 GND )
-  (    2 VPP )
-  (    3 GND )
-  (    4 VPP )
-  (    5 GND )
-  (    6 VPP )
+  (    1 VPP )
+  (    2 GND )
+  (    3 VPP )
+  (    4 GND )
+  (    5 VPP )
+  (    6 GND )
  )
 )
 *
@@ -2446,9 +2446,9 @@ Net 24 "GND" "GND"
  R51 2
  R59 2
  R67 2
- P12 3
- P12 5
- P12 1
+ P12 2
+ P12 4
+ P12 6
  R43 2
  P14 1
  C48 2
@@ -2581,16 +2581,16 @@ Net 24 "GND" "GND"
  C31 2
  C30 2
  RV3 3
- R53 2
- R54 2
- R69 2
- R68 2
- R99 2
  R60 2
+ R53 2
  R70 2
+ R99 2
+ R68 2
+ R69 2
+ R54 2
 Net 25 "" ""
- U5 15
  RV5 1
+ U5 15
  C5 2
 Net 26 "/FAN" "FAN"
  U7 13
@@ -2641,8 +2641,8 @@ Net 41 "/ME2_BOUT2" "ME2_BOUT2"
  U5 8
  P9 20
 Net 42 "" ""
- R66 1
  DIP5 2
+ R66 1
 Net 43 "" ""
  R63 1
  DIP5 8
@@ -2657,8 +2657,8 @@ Net 46 "/ME1_ISENB" "ME1_ISENB"
  C33 1
  R13 2
 Net 47 "" ""
- U4 12
  U4 13
+ U4 12
  RV4 2
 Net 48 "/ME1_ISENA" "ME1_ISENA"
  C32 1
@@ -2678,18 +2678,18 @@ Net 51 "/MZ_MODE1" "MZ_MODE1"
  DIP3 3
 Net 52 "/MZ_MODE2" "MZ_MODE2"
  DIP3 5
- U3 26
  R53 1
+ U3 26
 Net 54 "/MZ_DECAY" "MZ_DECAY"
- U3 19
  JP3 2
+ U3 19
 Net 55 "" ""
- RV3 1
  C3 2
+ RV3 1
  U3 15
 Net 56 "/MZ_AOUT1" "MZ_AOUT1"
- U3 5
  P9 9
+ U3 5
 Net 57 "/MZ_AOUT2" "MZ_AOUT2"
  P9 10
  U3 7
@@ -2700,8 +2700,8 @@ Net 59 "" ""
  R57 1
  DIP4 4
 Net 60 "" ""
- DIP4 6
  R56 1
+ DIP4 6
 Net 61 "" ""
  R55 1
  DIP4 8
@@ -2715,28 +2715,28 @@ Net 64 "/ME1_BOUT2" "ME1_BOUT2"
  U4 8
  P9 16
 Net 65 "" ""
- R19 2
  JP4 1
+ R19 2
 Net 66 "" ""
- JP4 3
  R4 2
+ JP4 3
 Net 67 "/ME1_AOUT1" "ME1_AOUT1"
  U4 5
  P9 13
 Net 68 "/ME1_MODE0" "ME1_MODE0"
- U4 24
  DIP4 1
+ U4 24
  R59 1
 Net 69 "/ME1_SLP" "ME1_SLP"
  R62 1
  U4 17
  DIP4 7
 Net 70 "/MZ_BOUT2" "MZ_BOUT2"
- U3 8
  P9 12
+ U3 8
 Net 71 "/MZ_BOUT1" "MZ_BOUT1"
- P9 11
  U3 10
+ P9 11
 Net 72 "" ""
  R50 1
  DIP3 2
@@ -2744,171 +2744,171 @@ Net 73 "" ""
  DIP3 4
  R49 1
 Net 74 "" ""
- R48 1
  DIP3 6
+ R48 1
 Net 75 "" ""
- DIP3 8
  R47 1
+ DIP3 8
 Net 76 "" ""
- R18 2
  JP3 1
+ R18 2
 Net 77 "" ""
  R3 2
  JP3 3
 Net 78 "/MZ_RST" "MZ_RST"
- U3 16
  R26 1
+ U3 16
 Net 79 "/MZ_SLP" "MZ_SLP"
  R54 1
  U3 17
  DIP3 7
 Net 80 "/MZ_HOME" "MZ_HOME"
- D12 2
  R78 2
+ D12 2
  U3 27
 Net 81 "/MZ_STEP" "MZ_STEP"
- U3 22
  U7 25
+ U3 22
 Net 82 "" ""
- C8 1
  U3 1
+ C8 1
 Net 83 "" ""
- C8 2
  U3 2
+ C8 2
 Net 84 "" ""
  U3 3
  C13 2
 Net 85 "/MZ_DIR" "MZ_DIR"
- U3 20
  U7 24
+ U3 20
 Net 86 "" ""
- R82 2
- Q1 G
  R99 1
+ Q1 G
+ R82 2
 Net 87 "" ""
- Q2 G
  R84 2
  R100 1
+ Q2 G
 Net 88 "" ""
  R86 2
- R101 1
  Q3 G
+ R101 1
 Net 89 "" ""
- R88 2
- Q4 G
  R102 1
-Net 90 "VPP" "VPP"
- P11 3
- C19 1
- C25 1
- C13 1
- U1 11
- C11 1
- U1 4
- U3 4
- C17 1
- U3 11
- P11 4
- C45 1
- C23 1
- P10 11
- C18 1
- P1 2
- P12 4
- C20 1
- U2 4
- P2 2
- U4 11
- P3 2
- U2 11
- U5 11
- C24 1
- P12 2
- C16 1
- C22 1
- P12 6
- C14 1
- U4 4
- U5 4
- C12 1
- P4 2
- C21 1
- P10 10
- C15 1
-Net 91 "/MY_MODE1" "MY_MODE1"
- U2 25
- DIP2 3
+ Q4 G
+ R88 2
+Net 90 "/MY_MODE1" "MY_MODE1"
  R44 1
-Net 92 "/MY_MODE2" "MY_MODE2"
+ DIP2 3
+ U2 25
+Net 91 "/MY_MODE2" "MY_MODE2"
+ U2 26
  R45 1
  DIP2 5
- U2 26
-Net 93 "/MY_SLP" "MY_SLP"
+Net 92 "/MY_SLP" "MY_SLP"
  U2 17
  R46 1
  DIP2 7
-Net 94 "/MY_MODE0" "MY_MODE0"
+Net 93 "/MY_MODE0" "MY_MODE0"
  U2 24
  R43 1
  DIP2 1
-Net 95 "/VBUS" "VBUS"
+Net 94 "/VBUS" "VBUS"
+ C38 1
+ C36 1
+ R91 2
+ R90 2
+ C37 1
  J1 1
  U6 4
- C38 1
- R90 2
- C36 1
- C37 1
- R91 2
  U6 20
-Net 96 "" ""
- C41 1
+Net 95 "" ""
  JP6 2
-Net 97 "/RST" "RST"
- R113 2
+ C41 1
+Net 96 "/RST" "RST"
  P14 2
- U7 4
- JP6 1
- C49 2
  P5 5
-Net 98 "" ""
- D17 1
+ R113 2
+ C49 2
+ JP6 1
+ U7 4
+Net 97 "" ""
  R91 1
-Net 99 "" ""
+ D17 1
+Net 98 "" ""
  R90 1
  D16 1
-Net 100 "" ""
- U6 23
+Net 99 "" ""
  D17 2
-Net 101 "" ""
- U6 22
+ U6 23
+Net 100 "" ""
  D16 2
-Net 103 "" ""
+ U6 22
+Net 102 "" ""
  C41 2
  U6 2
+Net 103 "VPP" "VPP"
+ P12 1
+ C14 1
+ U4 11
+ U3 4
+ U1 4
+ C11 1
+ U1 11
+ P12 3
+ U5 11
+ U5 4
+ P12 5
+ P4 2
+ P3 2
+ P2 2
+ P1 2
+ U3 11
+ C17 1
+ C24 1
+ P11 3
+ C19 1
+ C13 1
+ C22 1
+ C20 1
+ P11 4
+ C21 1
+ C45 1
+ U4 4
+ C18 1
+ C16 1
+ C25 1
+ U2 11
+ C15 1
+ C23 1
+ P10 10
+ P10 11
+ U2 4
+ C12 1
 Net 105 "" ""
- U7 23
  R21 1
+ U7 23
 Net 109 "" ""
  R112 1
  D7 1
 Net 110 "" ""
- D4 1
  R94 1
+ D4 1
 Net 111 "" ""
- D5 1
  R110 1
+ D5 1
 Net 112 "" ""
  R111 1
  D6 1
 Net 113 "+5VA" "+5VA"
- C47 1
- R106 1
- L1 2
- R105 1
  C50 1
+ L1 2
  C40 2
- U7 27
  R104 1
+ R106 1
+ U7 27
+ C47 1
+ R105 1
 Net 114 "" ""
  U7 29
  C46 2
@@ -2916,24 +2916,24 @@ Net 116 "/MIN_Y" "MIN_Y"
  P7 4
  U7 32
 Net 117 "/HOTEND1_ON" "HOTEND1_ON"
- D7 2
  P1 1
  Q1 D
+ D7 2
 Net 118 "/MISO" "MISO"
- P5 1
  P8 8
+ P5 1
  U7 2
 Net 119 "/MOSI" "MOSI"
- P5 4
  U7 1
  P8 10
+ P5 4
 Net 120 "/SCK" "SCK"
- P8 6
- P5 3
  U7 3
+ P5 3
+ P8 6
 Net 121 "/MY_AOUT1" "MY_AOUT1"
- P9 5
  U2 5
+ P9 5
 Net 122 "/MX_AOUT1" "MX_AOUT1"
  P9 1
  U1 5
@@ -2944,106 +2944,106 @@ Net 124 "/MY_BOUT1" "MY_BOUT1"
  U2 10
  P9 7
 Net 125 "+5V" "+5V"
- R30 2
- R113 1
- R47 2
- R39 2
+ R16 1
+ R97 1
  R94 2
  R110 2
- C39 2
  U7 5
- R16 1
- R17 1
- R63 2
- R55 2
- R57 2
- R56 2
- R22 2
- R40 2
- R64 2
- R98 1
  R93 1
- R95 1
+ R98 1
+ R22 2
  R96 1
- R97 1
- L1 1
- R20 1
- R83 1
+ R95 1
+ C39 2
+ R64 2
+ R34 2
+ R56 2
+ R18 1
  R31 2
- R32 2
- R33 2
- R58 2
- R24 2
- C48 1
- R112 2
- R19 1
- R111 2
- R81 1
- R85 1
+ R57 2
+ R83 1
  R87 1
  R89 1
  R26 2
- R18 1
+ R81 1
+ R32 2
  R92 1
- R34 2
- R28 2
- P7 9
+ L1 1
+ R85 1
+ R30 2
+ R17 1
+ C48 1
+ R33 2
+ R58 2
+ R40 2
+ R24 2
+ R20 1
+ R112 2
+ R19 1
+ R111 2
+ R113 1
  R41 2
- P5 2
- U7 38
- U7 17
- JP7 2
- R48 2
- P7 6
- P7 3
- R66 2
- P8 1
- R42 2
+ P7 9
  R49 2
+ R47 2
+ R42 2
+ P7 3
+ U7 17
+ U7 38
+ R28 2
+ P7 6
  R65 2
  R50 2
+ R39 2
+ R48 2
+ R63 2
+ JP7 2
+ P8 1
+ R66 2
+ R55 2
+ P5 2
 Net 126 "/5V_ATX" "5V_ATX"
- P10 21
  P10 4
+ P10 21
+ JP7 3
  P10 6
  P10 23
  P10 22
- JP7 3
 Net 128 "/5V_ATX_SB" "5V_ATX_SB"
  P10 9
  JP7 1
 Net 131 "/HOTBED_ON" "HOTBED_ON"
+ P3 1
  D5 2
  Q3 D
- P3 1
 Net 132 "/HOTEND2_ON" "HOTEND2_ON"
+ D6 2
  Q2 D
  P2 1
- D6 2
 Net 133 "/SD_CS" "SD_CS"
- P8 3
  U7 30
+ P8 3
 Net 134 "/E1_TEMP" "E1_TEMP"
- C51 1
- U7 37
- P7 10
  R104 2
+ U7 37
+ C51 1
+ P7 10
 Net 135 "/E2_TEMP" "E2_TEMP"
- R105 2
- P7 12
- C52 1
  U7 36
+ P7 12
+ R105 2
+ C52 1
 Net 136 "/BED_TEMP" "BED_TEMP"
  P7 14
- U7 35
  C53 1
  R106 2
+ U7 35
 Net 137 "" ""
  R1 2
  JP1 3
 Net 138 "" ""
- R16 2
  JP1 1
+ R16 2
 Net 139 "/HOTEND1" "HOTEND1"
  R82 1
  U7 14
@@ -3057,102 +3057,102 @@ Net 142 "/MY_DIR" "MY_DIR"
  U2 20
  U7 21
 Net 143 "/MY_STEP" "MY_STEP"
- U7 22
  U2 22
+ U7 22
 Net 144 "/MX_DECAY" "MX_DECAY"
- JP1 2
  U1 19
+ JP1 2
 Net 145 "/RXD" "RXD"
- U7 9
  P6 4
+ U7 9
  U6 1
 Net 146 "/TXD" "TXD"
- U6 5
- U7 10
  P6 5
+ U7 10
+ U6 5
 Net 147 "/MX_DIR" "MX_DIR"
  U1 20
  U7 11
 Net 148 "/MX_STEP" "MX_STEP"
- U7 12
  U1 22
+ U7 12
 Net 149 "" ""
  U6 15
  J1 3
 Net 150 "" ""
- U6 16
  J1 2
+ U6 16
 Net 151 "" ""
- U6 17
  C42 1
+ U6 17
 Net 152 "/MX_ISENA" "MX_ISENA"
- C26 1
  R6 2
  U1 6
+ C26 1
 Net 153 "/MX_ISENB" "MX_ISENB"
- R7 2
  C27 1
  U1 9
+ R7 2
 Net 154 "/MX_RST" "MX_RST"
- R22 1
  U1 16
+ R22 1
 Net 155 "/MX_SLP" "MX_SLP"
- R38 1
  DIP1 7
  U1 17
+ R38 1
 Net 156 "/MX_HOME" "MX_HOME"
  D10 2
  R76 2
  U1 27
 Net 157 "/MX_FAULT" "MX_FAULT"
  R71 2
- U1 18
  D1 2
+ U1 18
 Net 158 "/MX_MODE0" "MX_MODE0"
+ U1 24
  DIP1 1
  R35 1
- U1 24
 Net 159 "/MX_MODE1" "MX_MODE1"
- U1 25
  DIP1 3
+ U1 25
  R36 1
 Net 160 "/MX_MODE2" "MX_MODE2"
+ R37 1
  U1 26
  DIP1 5
- R37 1
 Net 161 "" ""
- C6 1
  U1 1
+ C6 1
 Net 162 "" ""
- U1 2
  C6 2
+ U1 2
 Net 163 "" ""
- U1 3
  C11 2
+ U1 3
 Net 164 "" ""
- D15 1
  R98 2
+ D15 1
 Net 165 "" ""
- R92 2
  D10 1
+ R92 2
 Net 166 "" ""
  R93 2
  D11 1
 Net 167 "" ""
- D12 1
  R95 2
+ D12 1
 Net 168 "" ""
- R96 2
  D13 1
+ R96 2
 Net 169 "" ""
  R89 2
  D9 1
 Net 170 "" ""
- D14 1
  R97 2
+ D14 1
 Net 171 "" ""
- DIP1 2
  R34 1
+ DIP1 2
 Net 172 "" ""
  DIP1 4
  R33 1
@@ -3163,137 +3163,137 @@ Net 174 "" ""
  R31 1
  DIP1 8
 Net 175 "" ""
- D2 1
  R83 2
+ D2 1
 Net 176 "" ""
- D3 1
  R85 2
+ D3 1
 Net 177 "" ""
  D8 1
  R87 2
 Net 178 "" ""
- C49 1
  P6 6
+ C49 1
 Net 179 "/ME1_DIR" "ME1_DIR"
- U4 20
  U7 44
+ U4 20
 Net 180 "/ME1_STEP" "ME1_STEP"
  U7 43
  U4 22
 Net 192 "" ""
- C43 1
  U7 8
+ C43 1
  X1 2
 Net 193 "" ""
+ C44 1
  U7 7
  X1 1
- C44 1
 Net 194 "" ""
- D1 1
  R81 2
+ D1 1
 Net 195 "" ""
  DIP2 4
  R41 1
 Net 196 "" ""
- R39 1
  DIP2 8
+ R39 1
 Net 197 "" ""
- R42 1
  DIP2 2
+ R42 1
 Net 198 "" ""
  DIP2 6
  R40 1
 Net 199 "/MY_ISENA" "MY_ISENA"
- C28 1
  U2 6
  R8 2
+ C28 1
 Net 200 "/MY_ISENB" "MY_ISENB"
  R9 2
- U2 9
  C29 1
+ U2 9
 Net 201 "" ""
- RV2 1
- C2 2
  U2 15
+ C2 2
+ RV2 1
 Net 202 "/MY_HOME" "MY_HOME"
- D11 2
- U2 27
  R77 2
+ U2 27
+ D11 2
 Net 203 "/MY_FAULT" "MY_FAULT"
  D2 2
  U2 18
  R72 2
 Net 204 "" ""
- U2 1
  C7 1
+ U2 1
 Net 205 "" ""
- JP2 1
  R17 2
+ JP2 1
 Net 206 "/MY_DECAY" "MY_DECAY"
  U2 19
  JP2 2
 Net 207 "" ""
- R2 2
  JP2 3
+ R2 2
 Net 208 "" ""
- U2 2
  C7 2
+ U2 2
 Net 209 "" ""
  C12 2
  U2 3
 Net 210 "/ME1_MODE2" "ME1_MODE2"
- DIP4 5
- U4 26
  R61 1
+ U4 26
+ DIP4 5
 Net 211 "/ME1_DECAY" "ME1_DECAY"
- JP4 2
  U4 19
+ JP4 2
 Net 212 "/ME1_MODE1" "ME1_MODE1"
- U4 25
  DIP4 3
+ U4 25
  R60 1
 Net 213 "/ME1_RST" "ME1_RST"
  R28 1
  U4 16
 Net 214 "/ME1_HOME" "ME1_HOME"
- R79 2
- D13 2
  U4 27
+ D13 2
+ R79 2
 Net 215 "/ME1_FAULT" "ME1_FAULT"
- U4 18
- D8 2
  R74 2
+ D8 2
+ U4 18
 Net 216 "" ""
- U4 2
  C9 2
+ U4 2
 Net 217 "" ""
- U4 15
  RV4 1
+ U4 15
  C4 2
 Net 218 "" ""
- C9 1
  U4 1
+ C9 1
 Net 219 "" ""
- C14 2
  U4 3
+ C14 2
 Net 220 "" ""
- RV2 2
  U2 12
+ RV2 2
  U2 13
 Net 221 "/MY_RST" "MY_RST"
  R24 1
  U2 16
 Net 223 "/FAN_ON" "FAN_ON"
- Q4 D
  P4 1
+ Q4 D
  D4 2
 Net 224 "" ""
- U1 15
- C1 2
  RV1 1
+ C1 2
+ U1 15
 Net 225 "" ""
- U1 12
- U1 13
  RV1 2
+ U1 13
+ U1 12
 }
 #End
