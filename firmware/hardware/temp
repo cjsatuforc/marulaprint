@@ -1,0 +1,185 @@
+
+
+
+#define BUFFER_LENGTH       64
+
+volatile uint8_t  rxstart;
+volatile uint8_t    rxend;
+volatile uint8_t  txstart;
+volatile uint8_t  txend;
+
+volatile uint8_t  rxbuffer[BUFFER_LENGTH];
+volatile uint8_t  txbuffer[BUFFER_LENGTH];
+
+#define BAUD_RATE_PRESCALE   (((F_CPU/(UART_BAUD_RATE * 16UL))) - 1)
+
+#define READABLE(b) ((b ## start - b ## end ) & (BUFFER_LENGTH - 1))
+#define WRITABLE(b) ((b ## end - b ## start - 1) & (BUFFER_LENGTH -1))
+#define POP(b,d)  do { d = b ## buffer[b ## end]; b ## end = (b ## end + 1) & (BUFFER_LENGTH - 1); } while(0)
+#define PUSH(b,d)   do {b ## buffer[b ## start] = d; b ## start = (b ## start + 1) & (BUFFER_LENGTH -1); } while(0)
+
+
+/*
+20 Mhz
+
+Bit Rate  UBRR  % of error
+-------   ------  ----------
+300     4166  0.0
+600     2082  0.0
+1200    1041  0.0
+2400    520   0.0
+4800    259   0.2
+9600    129   0.2
+14400   86    0.2
+19200   64    0.2
+28800   42    0.9
+38400   32    1.4
+57600   21    1.4
+76800   15    1.7
+115200    10    1.4
+230400    4   7.8
+
+
+UBRR=((f_clk/(BaudRate*16))-1)
+
+*/
+
+/* ------------------------------------------------------------------
+ * Initialise the USART on the board for serial communication
+ * ------------------------------------------------------------------ */
+void uart_init(void) {
+
+  // set up baud rate
+  //#if UART_BAUD_RATE > 38400
+//    UCSR0A = MASK(U2X0);
+  //  UBRR0 = (((F_CPU / 8) / UART_BAUD_RATE) - 0.5);
+  //#else
+//    UCSR0A = 0x0;
+//    UBRR0 = (((F_CPU / 16) / UART_BAUD_RATE) - 0.5);//
+  //#endif
+
+  UBRR0L = BAUD_RATE_PRESCALE;
+  UBRR0H = (BAUD_RATE_PRESCALE >> 8);
+
+
+  // enable tx & rx
+  UCSR0B = MASK(TXEN0) | MASK(RXEN0);
+
+  //set to 8N1
+  UCSR0C = MASK(UCSZ00) | MASK(UCSZ01);
+
+  // enable tx & rx interrupts
+  UCSR0B |=  MASK(RXCIE0) | MASK(UDRIE0);
+}
+
+/* ------------------------------------------------------------------
+ * Receive a character from the UART
+ * ------------------------------------------------------------------ */
+#ifdef USART_RX_vect
+int ISR(USART_RX_vect)
+#else
+int IRS(USART0_RX_vect)
+#endif
+{
+  ATOMIC_BLOCK(ATOMIC_RESTORESTATE) {
+    if(WRITABLE(rx)) {
+      PUSH(rx, UDR0);
+    } else {
+      uint8_t value = UDR0;
+    }
+  }
+  return 1;
+}
+
+/* ------------------------------------------------------------------
+ * UART is available for TX. Send a character or disable interrupt
+ * ------------------------------------------------------------------ */
+#ifdef USART_UDRE_vect
+ISR(USART_UDRE_vect)
+#else
+ISR(USART0_UDRE_vect)
+#endif
+{
+  ATOMIC_BLOCK(ATOMIC_RESTORESTATE) {
+    if(READABLE(tx)) {
+      POP(tx, UDR0);
+    } else {
+      UCSR0B &= ~MASK(UDRIE0);
+    }
+  }
+}
+
+/* ------------------------------------------------------------------
+ * Return the length of the RX buffer
+ * ------------------------------------------------------------------ */
+uint8_t uart_rx_len() {
+  return (uint8_t) READABLE(rx);
+}
+
+/* ------------------------------------------------------------------
+ * Pop a character off the RX buffer
+ * ------------------------------------------------------------------ */
+uint8_t uart_rx_pop() {
+  uint8_t result = 0x0;
+  if(READABLE(rx)) {
+    POP(rx, result);
+  }
+  return result;
+}
+
+/* ------------------------------------------------------------------
+ * Push a character onto the TX buffer
+ * ------------------------------------------------------------------ */
+void uart_tx_push(uint8_t data) {
+
+
+  //if(WRITABLE(tx)) PUSH(tx, data);
+  //UCSR0B |= MASK(UDRIE0);
+
+  //UDR0 = data;
+
+
+
+  if(SREG & MASK(SREG_I)) {
+    // interrupts are enabled. block until there is room in
+    // the TX buffer and then place the character into it.
+    for(;WRITABLE(tx)==0;) {}
+    PUSH(tx,data);
+  } else {
+    // interrupts are disabled. more than likely, we are currently
+    // inside an ISR. If there is room in the TX buffer, write
+    // our character. Otherwise toss it.
+    if(WRITABLE(tx)) {
+      PUSH(tx, data);
+    }
+  }
+
+  // enable the transmit buffer ready interrupt because we
+  // now have some data to send
+  UCSR0B |= MASK(UDRIE0);
+
+}
+
+/* ------------------------------------------------------------------
+ * Push len characters onto the TX buffer
+ * ------------------------------------------------------------------ */
+void uart_tx_write(void *data, int len) {
+  uint8_t i;
+  for(i=0;i<len;i++){
+    uart_tx_push(((uint8_t *)data)[i]);
+    _delay_us(400);
+
+  }
+}
+
+/* ------------------------------------------------------------------
+ * Push a null terminated string of characters onto the TX buffer
+ * ------------------------------------------------------------------ */
+void uart_tx_write_str(char *data) {
+
+  char *ptr = data;
+  while(*ptr != 0x0) {
+    uart_tx_push((uint8_t)*ptr++);
+    _delay_us(400);
+  }
+}
