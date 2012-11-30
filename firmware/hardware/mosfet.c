@@ -1,5 +1,6 @@
 
 #include "mosfet.h"
+#include "../config.h"
 #include "../helper/macros.h"
 
 /* ------------------------------------------------------------------

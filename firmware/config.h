@@ -29,7 +29,7 @@
 
 #define MOSFET1											5
 #define MOSFET1_PORT_REG								PORTD
-#define MOSFET1_DATA_DIREC/home/guy/workspaceTION_REG						DDRD
+#define MOSFET1_DATA_DIRECTION_REG						DDRD
 
 #define MOSFET2											6
 #define MOSFET2_PORT_REG								PORTD
@@ -102,7 +102,7 @@
  *
  */
 
-#define x
+
 
 #define ADC1											1
 #define ADC1_PORT_REG									PORTA

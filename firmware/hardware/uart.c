@@ -37,10 +37,11 @@ Bit Rate  UBRR  % of error
 
 UBRR=((f_clk/(BaudRate*16))-1)
 
+#define BAUD_RATE_PRESCALE   (((F_CPU/(UART_BAUD_RATE * 16UL))) - 1)
+
 */
 
-//#define BAUD_RATE_PRESCALE   (((F_CPU/(UART_BAUD_RATE * 16UL))) - 1)
-#define BAUD UART_BAUD_RATE
+
 
 #define RX_BUFFER_LENGTH 64
 #define TX_BUFFER_LENGTH 64
@@ -112,8 +113,7 @@ ISR(UART_TX_DATA_REG_EMPTY) {
  * Receive a character on the UART
  * ------------------------------------------------------------------ */
 ISR(UART_RX_COMPLETE_VECT) {
-	uint8_t c = UDR0;
-	ring_push(&rx, c);
+	ring_push(&rx, UDR0);
 }
 
 
@@ -157,7 +157,7 @@ uint8_t uart_rx_peek_tail() {
  * ------------------------------------------------------------------ */
 void uart_tx_push(uint8_t data) {
 	ring_push(&tx, data);
-	UART_CONTROL_STATUS_REG_B |= MASK(UDRIE0);
+	UART_CONTROL_STATUS_REG_B |= MASK(UART_DATA_REGISTER_EMPTY_INTERRUPT_ENABLE);
 }
 
 /* ------------------------------------------------------------------
