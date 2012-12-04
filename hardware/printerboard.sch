@@ -1,4 +1,4 @@
-EESchema Schematic File Version 2  date Thu 15 Nov 2012 10:39:33 SAST
+EESchema Schematic File Version 2  date Fri 23 Nov 2012 06:15:57 SAST
 LIBS:power
 LIBS:device
 LIBS:transistors
@@ -45,7 +45,7 @@ $Descr A2 23386 16535
 encoding utf-8
 Sheet 1 1
 Title "Marulaprint"
-Date "15 nov 2012"
+Date "23 nov 2012"
 Rev "1"
 Comp "Marulaberry Projects"
 Comment1 ""
@@ -599,34 +599,6 @@ Text Label 17850 8550 0    60   ~ 0
 TXD
 Text Notes 600  12700 0    60   ~ 12
 ATX Power
-NoConn ~ 2600 13900
-Text Label 800  13400 0    60   ~ 0
-5V_ATX_SB
-NoConn ~ 2600 13600
-NoConn ~ 2600 13300
-Text Label 800  13500 0    60   ~ 0
-12V_ATX
-Text Label 3050 13100 2    60   ~ 0
-5V_ATX
-Text Label 800  14000 0    60   ~ 0
-5V_ATX
-Text Label 800  14100 0    60   ~ 0
-5V_ATX
-Text Label 3050 13200 2    60   ~ 0
-5V_ATX
-Text Label 3050 13400 2    60   ~ 0
-12V_ATX
-Text Label 3050 14000 2    60   ~ 0
-5V_ATX
-$Comp
-L GND #PWR022
-U 1 1 50729CB9
-P 2750 14500
-F 0 "#PWR022" H 2750 14500 30  0001 C CNN
-F 1 "GND" H 2750 14430 30  0001 C CNN
-	1    2750 14500
-	1    0    0    -1  
-$EndComp
 Text Notes 6300 6550 0    60   ~ 12
 USB/Serial Interface
 $Comp
@@ -971,48 +943,6 @@ Wire Wire Line
 	18300 9450 17850 9450
 Wire Wire Line
 	18300 9550 17850 9550
-Wire Wire Line
-	1300 13400 800  13400
-Wire Wire Line
-	1300 13500 800  13500
-Wire Wire Line
-	2600 13100 3050 13100
-Wire Wire Line
-	1300 14000 800  14000
-Wire Wire Line
-	1300 14100 800  14100
-Wire Wire Line
-	2600 13200 3050 13200
-Wire Wire Line
-	2600 13400 3050 13400
-Wire Wire Line
-	2600 14000 3050 14000
-Wire Wire Line
-	2600 14100 2750 14100
-Wire Wire Line
-	2750 14100 2750 14500
-Wire Wire Line
-	1300 13100 700  13100
-Wire Wire Line
-	700  13100 700  14350
-Wire Wire Line
-	1300 13200 700  13200
-Connection ~ 700  13200
-Wire Wire Line
-	1300 13300 700  13300
-Connection ~ 700  13300
-Wire Wire Line
-	1300 13700 700  13700
-Connection ~ 700  13700
-Wire Wire Line
-	1300 13800 700  13800
-Connection ~ 700  13800
-Wire Wire Line
-	1300 13900 700  13900
-Connection ~ 700  13900
-Wire Wire Line
-	700  14350 3100 14350
-Connection ~ 2750 14350
 Wire Wire Line
 	4400 10450 5050 10450
 Wire Wire Line
@@ -4300,10 +4230,6 @@ Wire Wire Line
 Text Label 4550 11900 0    60   ~ 0
 SD_CS
 Wire Wire Line
-	2600 13800 3100 13800
-Wire Wire Line
-	3100 13800 3100 14350
-Wire Wire Line
 	2600 3750 2900 3750
 Wire Wire Line
 	7050 3750 7350 3750
@@ -4522,17 +4448,6 @@ Wire Notes Line
 	22800 13200 16450 13200
 Wire Notes Line
 	16450 13200 16450 11000
-Text Notes 650  14650 0    60   ~ 0
-PS_ON might need to be pulled low ??
-$Comp
-L MOLEX-39-28-1243 P10
-U 1 1 5083EFD3
-P 1950 13400
-F 0 "P10" H 1700 13950 60  0000 C CNN
-F 1 "MOLEX-39-28-1243" H 1950 12550 60  0000 C CNN
-	1    1950 13400
-	1    0    0    -1  
-$EndComp
 $Comp
 L MOLEX-39-28-1043 P11
 U 1 1 5083EFE2
@@ -5404,10 +5319,6 @@ F 1 "RESET" V 1600 11750 40  0000 C CNN
 	0    1    1    0   
 $EndComp
 Wire Wire Line
-	2600 13700 3100 13700
-Text Label 3100 13700 2    60   ~ 0
-PWR_ON
-Wire Wire Line
 	17100 12150 17100 12250
 NoConn ~ 6950 7950
 $Comp
@@ -5517,10 +5428,6 @@ Wire Wire Line
 	17450 9750 17450 9650
 Wire Wire Line
 	17450 10250 17450 10650
-NoConn ~ 1300 13000
-NoConn ~ 1300 13600
-NoConn ~ 2600 13500
-NoConn ~ 2600 13000
 $Comp
 L CP1 C48
 U 1 1 50A461F0
@@ -5571,4 +5478,99 @@ Connection ~ 5750 14150
 Wire Wire Line
 	5450 14250 5750 14250
 Connection ~ 5750 14250
+$Comp
+L MINIFIT-24-WAY P10
+U 1 1 50AF08A0
+P 3050 13500
+F 0 "P10" H 1650 14150 60  0000 C CNN
+F 1 "MINIFIT-24-WAY" H 2050 12700 60  0000 C CNN
+	1    3050 13500
+	1    0    0    -1  
+$EndComp
+NoConn ~ 1300 13000
+NoConn ~ 1300 13100
+NoConn ~ 2800 13000
+NoConn ~ 1300 13700
+NoConn ~ 1300 14100
+NoConn ~ 2800 13100
+Wire Wire Line
+	1300 13200 900  13200
+Wire Wire Line
+	900  13200 900  14500
+Wire Wire Line
+	2800 13200 3200 13200
+Wire Wire Line
+	3200 13200 3200 14500
+$Comp
+L GND #PWR?
+U 1 1 50AF11B7
+P 3200 14500
+F 0 "#PWR?" H 3200 14500 30  0001 C CNN
+F 1 "GND" H 3200 14430 30  0001 C CNN
+	1    3200 14500
+	1    0    0    -1  
+$EndComp
+$Comp
+L GND #PWR?
+U 1 1 50AF11BD
+P 900 14500
+F 0 "#PWR?" H 900 14500 30  0001 C CNN
+F 1 "GND" H 900 14430 30  0001 C CNN
+	1    900  14500
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	1300 13400 900  13400
+Connection ~ 900  13400
+Wire Wire Line
+	1300 13600 900  13600
+Connection ~ 900  13600
+Wire Wire Line
+	2800 13400 3200 13400
+Connection ~ 3200 13400
+Wire Wire Line
+	2800 13500 3200 13500
+Connection ~ 3200 13500
+Wire Wire Line
+	2800 13600 3200 13600
+Connection ~ 3200 13600
+Wire Wire Line
+	2800 14100 3200 14100
+Connection ~ 3200 14100
+Wire Wire Line
+	1300 13300 950  13300
+Wire Wire Line
+	1300 13500 950  13500
+Wire Wire Line
+	1300 13800 950  13800
+Wire Wire Line
+	1300 13900 950  13900
+Wire Wire Line
+	1300 14000 950  14000
+Wire Wire Line
+	2800 13300 3150 13300
+Wire Wire Line
+	2800 13800 3150 13800
+Wire Wire Line
+	2800 13900 3150 13900
+Wire Wire Line
+	2800 14000 3150 14000
+Text Label 950  13300 0    60   ~ 0
+5V_ATX
+Text Label 950  13500 0    60   ~ 0
+5V_ATX
+Text Label 3150 13800 2    60   ~ 0
+5V_ATX
+Text Label 3150 13900 2    60   ~ 0
+5V_ATX
+Text Label 3150 14000 2    60   ~ 0
+5V_ATX
+Text Label 950  13800 0    60   ~ 0
+5V_ATX_SB
+Text Label 950  13900 0    60   ~ 0
+12V_ATX
+Text Label 950  14000 0    60   ~ 0
+12V_ATX
+Text Label 3150 13300 2    60   ~ 0
+PWR_ON
 $EndSCHEMATC

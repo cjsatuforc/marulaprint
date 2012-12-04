@@ -113,6 +113,7 @@ ISR(UART_TX_DATA_REG_EMPTY) {
  * Receive a character on the UART
  * ------------------------------------------------------------------ */
 ISR(UART_RX_COMPLETE_VECT) {
+	mosfet_on(0);
 	ring_push(&rx, UDR0);
 }
 

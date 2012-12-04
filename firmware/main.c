@@ -40,33 +40,17 @@ int main(void) {
 		uart_tx_push('\r');
 		uart_tx_push('\n');
 
-		uart_tx_write_str("Add some Text\r\n");
-		_delay_ms(2000);
+		uart_tx_write_str("Add Text:\r\n");
+		_delay_ms(4000);
 
 
-		c = uart_rx_peek_head();
-		sprintf(buffer,"head: #%c#\r\n",c);
-		uart_tx_write_str(buffer);
-
-
-		c = uart_rx_peek_tail();
-		sprintf(buffer,"tail: #%c#\r\n",c);
-		uart_tx_write_str(buffer);
-
-
-		uart_tx_write_str("Buffer is: \r\n");
+		uart_tx_write_str("Text:\r\n");
 
 		c = uart_rx_pop();
 		while(c != 0x0) {
 			uart_tx_push(c);
-			c = uart_rx_pop();
 		}
-
-
-
-		uart_tx_clear();
-		uart_rx_clear();
-
+		uart_tx_write_str("\r\n");
 
 	}
 }

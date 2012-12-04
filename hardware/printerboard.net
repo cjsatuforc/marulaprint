@@ -1,4 +1,4 @@
-# EESchema Netlist Version 1.1 created  Thu 15 Nov 2012 10:39:44 SAST
+# EESchema Netlist Version 1.1 created  Fri 23 Nov 2012 05:57:23 SAST
 (
  ( /506D4CF7 $noname  P5 ISP {Lib=CONN_3X2}
   (    1 /MISO )
@@ -10,8 +10,8 @@
  )
  ( /506D5AC4 $noname  J1 USB {Lib=USB}
   (    1 /VBUS )
-  (    2 N-000150 )
-  (    3 N-000149 )
+  (    2 N-000157 )
+  (    3 N-000155 )
   (    4 GND )
   (    5 GND )
   (    6 GND )
@@ -30,7 +30,7 @@
  )
  ( /506D47EF $noname  U6 FT232RL {Lib=FT232RL}
   (    1 /RXD )
-  (    2 N-000102 )
+  (    2 N-000119 )
   (    3 ? )
   (    4 /VBUS )
   (    5 /TXD )
@@ -42,28 +42,28 @@
   (   12 ? )
   (   13 ? )
   (   14 ? )
-  (   15 N-000149 )
-  (   16 N-000150 )
-  (   17 N-000151 )
+  (   15 N-000155 )
+  (   16 N-000157 )
+  (   17 N-000158 )
   (   18 GND )
   (   19 ? )
   (   20 /VBUS )
   (   21 GND )
-  (   22 N-000100 )
-  (   23 N-000099 )
+  (   22 N-000120 )
+  (   23 N-000128 )
   (   25 GND )
   (   26 GND )
   (   27 ? )
   (   28 ? )
  )
  ( /506D4B12 $noname  C42 100n {Lib=C}
-  (    1 N-000151 )
+  (    1 N-000158 )
   (    2 GND )
  )
  ( /506E8B57 $noname  U1 DRV8825 {Lib=DRV8825}
-  (    1 N-000161 )
-  (    2 N-000162 )
-  (    3 N-000163 )
+  (    1 N-000154 )
+  (    2 N-000156 )
+  (    3 N-000167 )
   (    4 VPP )
   (    5 /MX_AOUT1 )
   (    6 /MX_ISENA )
@@ -72,10 +72,10 @@
   (    9 /MX_ISENB )
   (   10 /MX_BOUT1 )
   (   11 VPP )
-  (   12 N-000225 )
-  (   13 N-000225 )
+  (   12 N-000176 )
+  (   13 N-000176 )
   (   14 GND )
-  (   15 N-000224 )
+  (   15 N-000221 )
   (   16 /MX_RST )
   (   17 /MX_SLP )
   (   18 /MX_FAULT )
@@ -93,15 +93,15 @@
  )
  ( /506E8B5D $noname  C1 470n/6.3V {Lib=C}
   (    1 GND )
-  (    2 N-000224 )
+  (    2 N-000221 )
  )
  ( /506E8B87 $noname  C6 10n/50V {Lib=C}
-  (    1 N-000161 )
-  (    2 N-000162 )
+  (    1 N-000154 )
+  (    2 N-000156 )
  )
  ( /506E8B8D $noname  C11 100n/16V {Lib=C}
   (    1 VPP )
-  (    2 N-000163 )
+  (    2 N-000167 )
  )
  ( /506E8BA5 $noname  R7 0.2 {Lib=R}
   (    1 GND )
@@ -112,44 +112,44 @@
   (    2 /MX_ISENA )
  )
  ( /506E8BF5 $noname  JP1 MX_DEC {Lib=CONN_3}
-  (    1 N-000138 )
+  (    1 N-000165 )
   (    2 /MX_DECAY )
-  (    3 N-000137 )
+  (    3 N-000166 )
  )
  ( /506E8C38 $noname  D1 FAULT {Lib=LED}
-  (    1 N-000194 )
+  (    1 N-000097 )
   (    2 /MX_FAULT )
  )
  ( /506E8C94 $noname  R16 R {Lib=R}
   (    1 +5V )
-  (    2 N-000138 )
+  (    2 N-000165 )
  )
  ( /506E8C9A $noname  R1 R {Lib=R}
   (    1 GND )
-  (    2 N-000137 )
+  (    2 N-000166 )
  )
  ( /506EB999 $noname  C41 100n {Lib=C}
-  (    1 N-000095 )
-  (    2 N-000102 )
+  (    1 N-000123 )
+  (    2 N-000119 )
  )
  ( /506EBC43 $noname  JP6 AUTO_RST {Lib=CONN_2}
   (    1 /RST )
-  (    2 N-000095 )
+  (    2 N-000123 )
  )
  ( /50705A08 $noname  C45 1000u/50V/0.1R {Lib=CP1}
   (    1 VPP )
   (    2 GND )
  )
  ( /5070880C $noname  X1 16Mhz {Lib=CRYSTAL}
-  (    1 N-000193 )
-  (    2 N-000192 )
+  (    1 N-000189 )
+  (    2 N-000188 )
  )
  ( /50708DA3 $noname  C43 22p {Lib=C}
-  (    1 N-000192 )
+  (    1 N-000188 )
   (    2 GND )
  )
  ( /50708DE7 $noname  C44 22p {Lib=C}
-  (    1 N-000193 )
+  (    1 N-000189 )
   (    2 GND )
  )
  ( /50708300 $noname  C39 100n {Lib=C}
@@ -163,8 +163,8 @@
   (    4 /RST )
   (    5 +5V )
   (    6 GND )
-  (    7 N-000193 )
-  (    8 N-000192 )
+  (    7 N-000189 )
+  (    8 N-000188 )
   (    9 /RXD )
   (   10 /TXD )
   (   11 /MX_DIR )
@@ -179,13 +179,13 @@
   (   20 /SDA )
   (   21 /MY_DIR )
   (   22 /MY_STEP )
-  (   23 N-000105 )
+  (   23 N-000129 )
   (   24 /MZ_DIR )
   (   25 /MZ_STEP )
   (   26 /IOA )
   (   27 +5VA )
   (   28 GND )
-  (   29 N-000114 )
+  (   29 N-000126 )
   (   30 /SD_CS )
   (   31 /MIN_Z )
   (   32 /MIN_Y )
@@ -217,10 +217,10 @@
   (    3 ? )
   (    4 /RXD )
   (    5 /TXD )
-  (    6 N-000178 )
+  (    6 N-000143 )
  )
  ( /5072AD56 $noname  C49 100n {Lib=C}
-  (    1 N-000178 )
+  (    1 N-000143 )
   (    2 /RST )
  )
  ( /50755194 $noname  C17 100u/50V/Low_ESR {Lib=CP1}
@@ -229,72 +229,72 @@
  )
  ( /507577D0 $noname  DIP1 MX_SET {Lib=DIP-4}
   (    1 /MX_MODE0 )
-  (    2 N-000171 )
+  (    2 N-000174 )
   (    3 /MX_MODE1 )
-  (    4 N-000172 )
+  (    4 N-000175 )
   (    5 /MX_MODE2 )
-  (    6 N-000173 )
+  (    6 N-000138 )
   (    7 /MX_SLP )
-  (    8 N-000174 )
+  (    8 N-000173 )
  )
  ( /5075B083 $noname  D2 FAULT {Lib=LED}
-  (    1 N-000175 )
+  (    1 N-000098 )
   (    2 /MY_FAULT )
  )
  ( /5075B089 $noname  D3 FAULT {Lib=LED}
-  (    1 N-000176 )
+  (    1 N-000099 )
   (    2 /MZ_FAULT )
  )
  ( /5075B08F $noname  D8 FAULT {Lib=LED}
-  (    1 N-000177 )
+  (    1 N-000100 )
   (    2 /ME1_FAULT )
  )
  ( /5075B095 $noname  D9 FAULT {Lib=LED}
-  (    1 N-000169 )
+  (    1 N-000096 )
   (    2 /ME2_FAULT )
  )
  ( /5075B09B $noname  D10 HOME {Lib=LED}
-  (    1 N-000165 )
+  (    1 N-000101 )
   (    2 /MX_HOME )
  )
  ( /5075B0C6 $noname  D11 HOME {Lib=LED}
-  (    1 N-000166 )
+  (    1 N-000102 )
   (    2 /MY_HOME )
  )
  ( /5075B0CC $noname  D12 HOME {Lib=LED}
-  (    1 N-000167 )
+  (    1 N-000103 )
   (    2 /MZ_HOME )
  )
  ( /5075B0D2 $noname  D13 HOME {Lib=LED}
-  (    1 N-000168 )
+  (    1 N-000104 )
   (    2 /ME1_HOME )
  )
  ( /5075B0D8 $noname  D15 5V_OK {Lib=LED}
-  (    1 N-000164 )
+  (    1 N-000092 )
   (    2 GND )
  )
  ( /5075B130 $noname  D14 HOME {Lib=LED}
-  (    1 N-000170 )
+  (    1 N-000091 )
   (    2 /ME2_HOME )
  )
  ( /5076D24F $noname  Q1 FQD13N06TM {Lib=MOSFET_N}
   (    D /HOTEND1_ON )
-  (    G N-000086 )
+  (    G N-000105 )
   (    S GND )
  )
  ( /5076D255 $noname  Q2 FQD13N06TM {Lib=MOSFET_N}
   (    D /HOTEND2_ON )
-  (    G N-000087 )
+  (    G N-000106 )
   (    S GND )
  )
  ( /5076D279 $noname  Q3 FQD13N06TM {Lib=MOSFET_N}
   (    D /HOTBED_ON )
-  (    G N-000088 )
+  (    G N-000107 )
   (    S GND )
  )
  ( /5076D27F $noname  Q4 FQD13N06TM {Lib=MOSFET_N}
   (    D /FAN_ON )
-  (    G N-000089 )
+  (    G N-000108 )
   (    S GND )
  )
  ( /5076F5F6 $noname  P1 HOT1 {Lib=CONN_2}
@@ -314,8 +314,8 @@
   (    2 VPP )
  )
  ( /50758D94 $noname  RV1 10K {Lib=POT}
-  (    1 N-000224 )
-  (    2 N-000225 )
+  (    1 N-000221 )
+  (    2 N-000176 )
   (    3 GND )
  )
  ( /5075D3DA $noname  C26 100n {Lib=C}
@@ -363,9 +363,9 @@
   (    2 GND )
  )
  ( /50769435 $noname  U2 DRV8825 {Lib=DRV8825}
-  (    1 N-000204 )
-  (    2 N-000208 )
-  (    3 N-000209 )
+  (    1 N-000220 )
+  (    2 N-000202 )
+  (    3 N-000203 )
   (    4 VPP )
   (    5 /MY_AOUT1 )
   (    6 /MY_ISENA )
@@ -374,10 +374,10 @@
   (    9 /MY_ISENB )
   (   10 /MY_BOUT1 )
   (   11 VPP )
-  (   12 N-000220 )
-  (   13 N-000220 )
+  (   12 N-000193 )
+  (   13 N-000193 )
   (   14 GND )
-  (   15 N-000201 )
+  (   15 N-000225 )
   (   16 /MY_RST )
   (   17 /MY_SLP )
   (   18 /MY_FAULT )
@@ -395,15 +395,15 @@
  )
  ( /5076943B $noname  C2 470n/6.3V {Lib=C}
   (    1 GND )
-  (    2 N-000201 )
+  (    2 N-000225 )
  )
  ( /5076944D $noname  C7 10n/50V {Lib=C}
-  (    1 N-000204 )
-  (    2 N-000208 )
+  (    1 N-000220 )
+  (    2 N-000202 )
  )
  ( /50769453 $noname  C12 100n/16V {Lib=C}
   (    1 VPP )
-  (    2 N-000209 )
+  (    2 N-000203 )
  )
  ( /5076946B $noname  R9 0.2 {Lib=R}
   (    1 GND )
@@ -414,17 +414,17 @@
   (    2 /MY_ISENA )
  )
  ( /50769489 $noname  JP2 MX_DEC {Lib=CONN_3}
-  (    1 N-000205 )
+  (    1 N-000200 )
   (    2 /MY_DECAY )
-  (    3 N-000207 )
+  (    3 N-000201 )
  )
  ( /507694B3 $noname  R17 R {Lib=R}
   (    1 +5V )
-  (    2 N-000205 )
+  (    2 N-000200 )
  )
  ( /507694B9 $noname  R2 R {Lib=R}
   (    1 GND )
-  (    2 N-000207 )
+  (    2 N-000201 )
  )
  ( /507694F1 $noname  C19 100u/50V/Low_ESR {Lib=CP1}
   (    1 VPP )
@@ -432,17 +432,17 @@
  )
  ( /50769501 $noname  DIP2 MY_SET {Lib=DIP-4}
   (    1 /MY_MODE0 )
-  (    2 N-000197 )
+  (    2 N-000205 )
   (    3 /MY_MODE1 )
-  (    4 N-000195 )
+  (    4 N-000204 )
   (    5 /MY_MODE2 )
-  (    6 N-000198 )
+  (    6 N-000207 )
   (    7 /MY_SLP )
-  (    8 N-000196 )
+  (    8 N-000206 )
  )
  ( /50769542 $noname  RV2 10K {Lib=POT}
-  (    1 N-000201 )
-  (    2 N-000220 )
+  (    1 N-000225 )
+  (    2 N-000193 )
   (    3 GND )
  )
  ( /5076954B $noname  C28 100n {Lib=C}
@@ -458,9 +458,9 @@
   (    2 +5V )
  )
  ( /5076957E $noname  U4 DRV8825 {Lib=DRV8825}
-  (    1 N-000218 )
-  (    2 N-000216 )
-  (    3 N-000219 )
+  (    1 N-000195 )
+  (    2 N-000196 )
+  (    3 N-000197 )
   (    4 VPP )
   (    5 /ME1_AOUT1 )
   (    6 /ME1_ISENA )
@@ -469,10 +469,10 @@
   (    9 /ME1_ISENB )
   (   10 /ME1_BOUT1 )
   (   11 VPP )
-  (   12 N-000047 )
-  (   13 N-000047 )
+  (   12 N-000079 )
+  (   13 N-000079 )
   (   14 GND )
-  (   15 N-000217 )
+  (   15 N-000213 )
   (   16 /ME1_RST )
   (   17 /ME1_SLP )
   (   18 /ME1_FAULT )
@@ -490,15 +490,15 @@
  )
  ( /50769584 $noname  C4 470n/6.3V {Lib=C}
   (    1 GND )
-  (    2 N-000217 )
+  (    2 N-000213 )
  )
  ( /50769596 $noname  C9 10n/50V {Lib=C}
-  (    1 N-000218 )
-  (    2 N-000216 )
+  (    1 N-000195 )
+  (    2 N-000196 )
  )
  ( /5076959C $noname  C14 100n/16V {Lib=C}
   (    1 VPP )
-  (    2 N-000219 )
+  (    2 N-000197 )
  )
  ( /507695B4 $noname  R13 0.2 {Lib=R}
   (    1 GND )
@@ -509,17 +509,17 @@
   (    2 /ME1_ISENA )
  )
  ( /507695D2 $noname  JP4 MX_DEC {Lib=CONN_3}
-  (    1 N-000065 )
+  (    1 N-000218 )
   (    2 /ME1_DECAY )
-  (    3 N-000066 )
+  (    3 N-000212 )
  )
  ( /507695FC $noname  R19 R {Lib=R}
   (    1 +5V )
-  (    2 N-000065 )
+  (    2 N-000218 )
  )
  ( /50769602 $noname  R4 R {Lib=R}
   (    1 GND )
-  (    2 N-000066 )
+  (    2 N-000212 )
  )
  ( /5076963A $noname  C23 100u/50V/Low_ESR {Lib=CP1}
   (    1 VPP )
@@ -527,17 +527,17 @@
  )
  ( /5076964A $noname  DIP4 ME1_SET {Lib=DIP-4}
   (    1 /ME1_MODE0 )
-  (    2 N-000058 )
+  (    2 N-000214 )
   (    3 /ME1_MODE1 )
-  (    4 N-000059 )
+  (    4 N-000216 )
   (    5 /ME1_MODE2 )
-  (    6 N-000060 )
+  (    6 N-000075 )
   (    7 /ME1_SLP )
-  (    8 N-000061 )
+  (    8 N-000076 )
  )
  ( /5076968B $noname  RV4 10K {Lib=POT}
-  (    1 N-000217 )
-  (    2 N-000047 )
+  (    1 N-000213 )
+  (    2 N-000079 )
   (    3 GND )
  )
  ( /50769694 $noname  C32 100n {Lib=C}
@@ -553,9 +553,9 @@
   (    2 +5V )
  )
  ( /5076AA73 $noname  U3 DRV8825 {Lib=DRV8825}
-  (    1 N-000082 )
-  (    2 N-000083 )
-  (    3 N-000084 )
+  (    1 N-000060 )
+  (    2 N-000069 )
+  (    3 N-000070 )
   (    4 VPP )
   (    5 /MZ_AOUT1 )
   (    6 /MZ_ISENA )
@@ -567,7 +567,7 @@
   (   12 N-000023 )
   (   13 N-000023 )
   (   14 GND )
-  (   15 N-000055 )
+  (   15 N-000058 )
   (   16 /MZ_RST )
   (   17 /MZ_SLP )
   (   18 /MZ_FAULT )
@@ -585,15 +585,15 @@
  )
  ( /5076AA79 $noname  C3 470n/6.3V {Lib=C}
   (    1 GND )
-  (    2 N-000055 )
+  (    2 N-000058 )
  )
  ( /5076AA8B $noname  C8 10n/50V {Lib=C}
-  (    1 N-000082 )
-  (    2 N-000083 )
+  (    1 N-000060 )
+  (    2 N-000069 )
  )
  ( /5076AA91 $noname  C13 100n/16V {Lib=C}
   (    1 VPP )
-  (    2 N-000084 )
+  (    2 N-000070 )
  )
  ( /5076AAA9 $noname  R11 0.2 {Lib=R}
   (    1 GND )
@@ -604,17 +604,17 @@
   (    2 /MZ_ISENA )
  )
  ( /5076AAC7 $noname  JP3 MX_DEC {Lib=CONN_3}
-  (    1 N-000076 )
+  (    1 N-000085 )
   (    2 /MZ_DECAY )
-  (    3 N-000077 )
+  (    3 N-000086 )
  )
  ( /5076AAF1 $noname  R18 R {Lib=R}
   (    1 +5V )
-  (    2 N-000076 )
+  (    2 N-000085 )
  )
  ( /5076AAF7 $noname  R3 R {Lib=R}
   (    1 GND )
-  (    2 N-000077 )
+  (    2 N-000086 )
  )
  ( /5076AB2F $noname  C21 100u/50V/Low_ESR {Lib=CP1}
   (    1 VPP )
@@ -622,16 +622,16 @@
  )
  ( /5076AB3F $noname  DIP3 MZ_SET {Lib=DIP-4}
   (    1 /MZ_MODE0 )
-  (    2 N-000072 )
+  (    2 N-000082 )
   (    3 /MZ_MODE1 )
-  (    4 N-000073 )
+  (    4 N-000083 )
   (    5 /MZ_MODE2 )
-  (    6 N-000074 )
+  (    6 N-000081 )
   (    7 /MZ_SLP )
-  (    8 N-000075 )
+  (    8 N-000084 )
  )
  ( /5076AB80 $noname  RV3 10K {Lib=POT}
-  (    1 N-000055 )
+  (    1 N-000058 )
   (    2 N-000023 )
   (    3 GND )
  )
@@ -648,7 +648,7 @@
   (    2 +5V )
  )
  ( /5076ABAE $noname  U5 DRV8825 {Lib=DRV8825}
-  (    1 N-000001 )
+  (    1 N-000002 )
   (    2 N-000003 )
   (    3 N-000004 )
   (    4 VPP )
@@ -659,10 +659,10 @@
   (    9 /ME2_ISENB )
   (   10 /ME2_BOUT1 )
   (   11 VPP )
-  (   12 N-000013 )
-  (   13 N-000013 )
+  (   12 N-000021 )
+  (   13 N-000021 )
   (   14 GND )
-  (   15 N-000025 )
+  (   15 N-000001 )
   (   16 /ME2_RST )
   (   17 /ME2_SLP )
   (   18 /ME2_FAULT )
@@ -680,10 +680,10 @@
  )
  ( /507848F3 $noname  C5 470n/6.3V {Lib=C}
   (    1 GND )
-  (    2 N-000025 )
+  (    2 N-000001 )
  )
  ( /5076ABC6 $noname  C10 10n/50V {Lib=C}
-  (    1 N-000001 )
+  (    1 N-000002 )
   (    2 N-000003 )
  )
  ( /5076ABCC $noname  C15 100n/16V {Lib=C}
@@ -699,17 +699,17 @@
   (    2 /ME2_ISENA )
  )
  ( /5076AC02 $noname  JP5 MX_DEC {Lib=CONN_3}
-  (    1 N-000006 )
+  (    1 N-000009 )
   (    2 /ME2_DECAY )
-  (    3 N-000007 )
+  (    3 N-000010 )
  )
  ( /5076AC2C $noname  R20 R {Lib=R}
   (    1 +5V )
-  (    2 N-000006 )
+  (    2 N-000009 )
  )
  ( /5076AC32 $noname  R5 R {Lib=R}
   (    1 GND )
-  (    2 N-000007 )
+  (    2 N-000010 )
  )
  ( /5076AC6A $noname  C25 100u/50V/Low_ESR {Lib=CP1}
   (    1 VPP )
@@ -717,17 +717,17 @@
  )
  ( /5076AC7A $noname  DIP5 ME2_SET {Lib=DIP-4}
   (    1 /ME2_MODE0 )
-  (    2 N-000042 )
+  (    2 N-000015 )
   (    3 /ME2_MODE1 )
-  (    4 N-000044 )
+  (    4 N-000053 )
   (    5 /ME2_MODE2 )
-  (    6 N-000045 )
+  (    6 N-000055 )
   (    7 /ME2_SLP )
-  (    8 N-000043 )
+  (    8 N-000052 )
  )
  ( /5076ACBB $noname  RV5 10K {Lib=POT}
-  (    1 N-000025 )
-  (    2 N-000013 )
+  (    1 N-000001 )
+  (    2 N-000021 )
   (    3 GND )
  )
  ( /5076ACC4 $noname  C34 100n {Lib=C}
@@ -795,19 +795,19 @@
   (   10 /MOSI )
  )
  ( /50783750 $noname  D4 ON {Lib=LED}
-  (    1 N-000110 )
+  (    1 N-000088 )
   (    2 /FAN_ON )
  )
  ( /50783756 $noname  D5 ON {Lib=LED}
-  (    1 N-000111 )
+  (    1 N-000089 )
   (    2 /HOTBED_ON )
  )
  ( /5078375C $noname  D6 ON {Lib=LED}
-  (    1 N-000112 )
+  (    1 N-000087 )
   (    2 /HOTEND2_ON )
  )
  ( /50783762 $noname  D7 ON {Lib=LED}
-  (    1 N-000109 )
+  (    1 N-000090 )
   (    2 /HOTEND1_ON )
  )
  ( /50786816 $noname  C24 100n {Lib=C}
@@ -830,32 +830,6 @@
   (    1 VPP )
   (    2 GND )
  )
- ( /5083EFD3 $noname  P10 MOLEX-39-28-1243 {Lib=MOLEX-39-28-1243}
-  (    1 ? )
-  (    2 ? )
-  (    3 GND )
-  (    4 /5V_ATX )
-  (    5 GND )
-  (    6 /5V_ATX )
-  (    7 GND )
-  (    8 ? )
-  (    9 /5V_ATX_SB )
-  (   10 VPP )
-  (   11 VPP )
-  (   12 ? )
-  (   13 ? )
-  (   14 ? )
-  (   15 GND )
-  (   16 /PWR_ON )
-  (   17 GND )
-  (   18 GND )
-  (   19 GND )
-  (   20 ? )
-  (   21 /5V_ATX )
-  (   22 /5V_ATX )
-  (   23 /5V_ATX )
-  (   24 GND )
- )
  ( /5083EFE2 $noname  P11 MOLEX-39-28-1043 {Lib=MOLEX-39-28-1043}
   (    1 GND )
   (    2 GND )
@@ -863,19 +837,19 @@
   (    4 VPP )
  )
  ( /5083F8D4 $noname  R31 80K {Lib=R}
-  (    1 N-000174 )
-  (    2 +5V )
- )
- ( /5083F8ED $noname  R32 80K {Lib=R}
   (    1 N-000173 )
   (    2 +5V )
  )
+ ( /5083F8ED $noname  R32 80K {Lib=R}
+  (    1 N-000138 )
+  (    2 +5V )
+ )
  ( /5083F8F3 $noname  R33 80K {Lib=R}
-  (    1 N-000172 )
+  (    1 N-000175 )
   (    2 +5V )
  )
  ( /5083F8F9 $noname  R34 80K {Lib=R}
-  (    1 N-000171 )
+  (    1 N-000174 )
   (    2 +5V )
  )
  ( /5083F909 $noname  R35 103K {Lib=R}
@@ -895,19 +869,19 @@
   (    2 GND )
  )
  ( /5083F92B $noname  R39 80K {Lib=R}
-  (    1 N-000196 )
+  (    1 N-000206 )
   (    2 +5V )
  )
  ( /5083F931 $noname  R47 80K {Lib=R}
-  (    1 N-000075 )
+  (    1 N-000084 )
   (    2 +5V )
  )
  ( /5083F937 $noname  R55 80K {Lib=R}
-  (    1 N-000061 )
+  (    1 N-000076 )
   (    2 +5V )
  )
  ( /5083F93D $noname  R63 80K {Lib=R}
-  (    1 N-000043 )
+  (    1 N-000052 )
   (    2 +5V )
  )
  ( /5083F943 $noname  R43 103K {Lib=R}
@@ -927,15 +901,15 @@
   (    2 GND )
  )
  ( /5083F965 $noname  R40 80K {Lib=R}
-  (    1 N-000198 )
+  (    1 N-000207 )
   (    2 +5V )
  )
  ( /5083F96B $noname  R41 80K {Lib=R}
-  (    1 N-000195 )
+  (    1 N-000204 )
   (    2 +5V )
  )
  ( /5083F971 $noname  R42 80K {Lib=R}
-  (    1 N-000197 )
+  (    1 N-000205 )
   (    2 +5V )
  )
  ( /5083F981 $noname  R44 103K {Lib=R}
@@ -951,15 +925,15 @@
   (    2 GND )
  )
  ( /5083F99D $noname  R48 80K {Lib=R}
-  (    1 N-000074 )
+  (    1 N-000081 )
   (    2 +5V )
  )
  ( /5083F9A3 $noname  R49 80K {Lib=R}
-  (    1 N-000073 )
+  (    1 N-000083 )
   (    2 +5V )
  )
  ( /5083F9A9 $noname  R50 80K {Lib=R}
-  (    1 N-000072 )
+  (    1 N-000082 )
   (    2 +5V )
  )
  ( /5083F9B9 $noname  R52 103K {Lib=R}
@@ -975,15 +949,15 @@
   (    2 GND )
  )
  ( /5083F9D5 $noname  R56 80K {Lib=R}
-  (    1 N-000060 )
+  (    1 N-000075 )
   (    2 +5V )
  )
  ( /5083F9DB $noname  R57 80K {Lib=R}
-  (    1 N-000059 )
+  (    1 N-000216 )
   (    2 +5V )
  )
  ( /5083F9E1 $noname  R58 80K {Lib=R}
-  (    1 N-000058 )
+  (    1 N-000214 )
   (    2 +5V )
  )
  ( /5083F9FB $noname  R60 103K {Lib=R}
@@ -999,15 +973,15 @@
   (    2 GND )
  )
  ( /5083FA17 $noname  R64 80K {Lib=R}
-  (    1 N-000045 )
+  (    1 N-000055 )
   (    2 +5V )
  )
  ( /5083FA1D $noname  R65 80K {Lib=R}
-  (    1 N-000044 )
+  (    1 N-000053 )
   (    2 +5V )
  )
  ( /5083FA23 $noname  R66 80K {Lib=R}
-  (    1 N-000042 )
+  (    1 N-000015 )
   (    2 +5V )
  )
  ( /5083FA33 $noname  R68 103K {Lib=R}
@@ -1024,79 +998,79 @@
  )
  ( /5083FA6A $noname  R82 10 {Lib=R}
   (    1 /HOTEND1 )
-  (    2 N-000086 )
+  (    2 N-000105 )
  )
  ( /5083FA8B $noname  R84 10 {Lib=R}
   (    1 /HOTEND2 )
-  (    2 N-000087 )
+  (    2 N-000106 )
  )
  ( /5083FA91 $noname  R86 10 {Lib=R}
   (    1 /HOTBED )
-  (    2 N-000088 )
+  (    2 N-000107 )
  )
  ( /5083FA97 $noname  R88 10 {Lib=R}
   (    1 /FAN )
-  (    2 N-000089 )
+  (    2 N-000108 )
  )
  ( /5083FAA9 $noname  R99 100K {Lib=R}
-  (    1 N-000086 )
+  (    1 N-000105 )
   (    2 GND )
  )
  ( /5083FAC2 $noname  R100 100K {Lib=R}
-  (    1 N-000087 )
+  (    1 N-000106 )
   (    2 GND )
  )
  ( /5083FAC8 $noname  R101 100K {Lib=R}
-  (    1 N-000088 )
+  (    1 N-000107 )
   (    2 GND )
  )
  ( /5083FACE $noname  R102 100K {Lib=R}
-  (    1 N-000089 )
+  (    1 N-000108 )
   (    2 GND )
  )
  ( /5084131E $noname  R81 330 {Lib=R}
   (    1 +5V )
-  (    2 N-000194 )
+  (    2 N-000097 )
  )
  ( /5084135D $noname  R83 330 {Lib=R}
   (    1 +5V )
-  (    2 N-000175 )
+  (    2 N-000098 )
  )
  ( /50841363 $noname  R85 330 {Lib=R}
   (    1 +5V )
-  (    2 N-000176 )
+  (    2 N-000099 )
  )
  ( /50841369 $noname  R87 330 {Lib=R}
   (    1 +5V )
-  (    2 N-000177 )
+  (    2 N-000100 )
  )
  ( /50841383 $noname  R89 330 {Lib=R}
   (    1 +5V )
-  (    2 N-000169 )
+  (    2 N-000096 )
  )
  ( /50841389 $noname  R92 330 {Lib=R}
   (    1 +5V )
-  (    2 N-000165 )
+  (    2 N-000101 )
  )
  ( /5084138F $noname  R93 330 {Lib=R}
   (    1 +5V )
-  (    2 N-000166 )
+  (    2 N-000102 )
  )
  ( /50841395 $noname  R95 330 {Lib=R}
   (    1 +5V )
-  (    2 N-000167 )
+  (    2 N-000103 )
  )
  ( /5084139B $noname  R96 330 {Lib=R}
   (    1 +5V )
-  (    2 N-000168 )
+  (    2 N-000104 )
  )
  ( /508413A1 $noname  R97 330 {Lib=R}
   (    1 +5V )
-  (    2 N-000170 )
+  (    2 N-000091 )
  )
  ( /508413A7 $noname  R98 330 {Lib=R}
   (    1 +5V )
-  (    2 N-000164 )
+  (    2 N-000092 )
  )
  ( /508413B9 $noname  R71 3.3K {Lib=R}
   (    1 GND )
@@ -1139,19 +1113,19 @@
   (    2 /ME2_HOME )
  )
  ( /50840781 $noname  R94 330 {Lib=R}
-  (    1 N-000110 )
+  (    1 N-000088 )
   (    2 +5V )
  )
  ( /508407AC $noname  R110 330 {Lib=R}
-  (    1 N-000111 )
+  (    1 N-000089 )
   (    2 +5V )
  )
  ( /508407B2 $noname  R111 330 {Lib=R}
-  (    1 N-000112 )
+  (    1 N-000087 )
   (    2 +5V )
  )
  ( /508407B8 $noname  R112 330 {Lib=R}
-  (    1 N-000109 )
+  (    1 N-000090 )
   (    2 +5V )
  )
  ( /50A0DC5E $noname  R113 10K {Lib=R}
@@ -1164,30 +1138,30 @@
  )
  ( /50A0F661 $noname  C46 100n {Lib=C}
   (    1 GND )
-  (    2 N-000114 )
+  (    2 N-000126 )
  )
  ( /50A11203 $noname  P14 RESET {Lib=CONN_2}
   (    1 GND )
   (    2 /RST )
  )
  ( /50A10287 $noname  D16 RX {Lib=LED}
-  (    1 N-000098 )
-  (    2 N-000100 )
+  (    1 N-000121 )
+  (    2 N-000120 )
  )
  ( /50A102AD $noname  D17 TX {Lib=LED}
-  (    1 N-000097 )
-  (    2 N-000099 )
+  (    1 N-000122 )
+  (    2 N-000128 )
  )
  ( /50A102D6 $noname  R90 R {Lib=R}
-  (    1 N-000098 )
+  (    1 N-000121 )
   (    2 /VBUS )
  )
  ( /50A102DC $noname  R91 R {Lib=R}
-  (    1 N-000097 )
+  (    1 N-000122 )
   (    2 /VBUS )
  )
  ( /50A20A5D $noname  R21 R {Lib=R}
-  (    1 N-000105 )
+  (    1 N-000129 )
   (    2 /ENABLE )
  )
  ( /50A461F0 $noname  C48 100u {Lib=CP1}
@@ -1201,6 +1175,32 @@
   (    4 GND )
   (    5 VPP )
   (    6 GND )
+ )
+ ( /50AF08A0 $noname  P10 MINIFIT-24-WAY {Lib=MINIFIT-24-WAY}
+  (    1 ? )
+  (    2 ? )
+  (    3 GND )
+  (    4 /5V_ATX )
+  (    5 GND )
+  (    6 /5V_ATX )
+  (    7 GND )
+  (    8 ? )
+  (    9 /5V_ATX_SB )
+  (   10 VPP )
+  (   11 VPP )
+  (   12 ? )
+  (   13 ? )
+  (   14 ? )
+  (   15 GND )
+  (   16 /PWR_ON )
+  (   17 GND )
+  (   18 GND )
+  (   19 GND )
+  (   20 ? )
+  (   21 /5V_ATX )
+  (   22 /5V_ATX )
+  (   23 /5V_ATX )
+  (   24 GND )
  )
 )
 *
@@ -2354,946 +2354,946 @@ $endfootprintlist
 }
 { Pin List by Nets
 Net 1 "" ""
+ C5 2
+ U5 15
+ RV5 1
+Net 2 "" ""
  U5 1
  C10 1
-Net 2 "/ME2_DECAY" "ME2_DECAY"
- JP5 2
- U5 19
 Net 3 "" ""
- C10 2
  U5 2
+ C10 2
 Net 4 "" ""
- C15 2
  U5 3
-Net 5 "/ME2_ISENA" "ME2_ISENA"
- U5 6
- C34 1
- R14 2
-Net 6 "" ""
- JP5 1
- R20 2
-Net 7 "" ""
- R5 2
- JP5 3
-Net 8 "/MZ_ISENA" "MZ_ISENA"
- C30 1
- U3 6
- R10 2
-Net 9 "/MZ_ISENB" "MZ_ISENB"
- U3 9
- R11 2
- C31 1
-Net 10 "/ME2_DIR" "ME2_DIR"
- U7 41
- U5 20
-Net 11 "/ENABLE" "ENABLE"
- U4 21
- U5 21
- U1 21
- R21 2
- U3 21
- U2 21
-Net 12 "/ME2_STEP" "ME2_STEP"
- U7 40
- U5 22
-Net 13 "" ""
- U5 13
- RV5 2
- U5 12
-Net 15 "/ME2_ISENB" "ME2_ISENB"
- U5 9
- R15 2
- C35 1
-Net 16 "/ME2_MODE0" "ME2_MODE0"
+ C15 2
+Net 5 "/ME2_MODE0" "ME2_MODE0"
  U5 24
- DIP5 1
  R67 1
-Net 17 "/ME2_MODE1" "ME2_MODE1"
- U5 25
- DIP5 3
- R68 1
-Net 18 "/ME2_RST" "ME2_RST"
- U5 16
- R30 1
-Net 19 "/ME2_MODE2" "ME2_MODE2"
- R69 1
- U5 26
- DIP5 5
-Net 20 "/ME2_SLP" "ME2_SLP"
- U5 17
- R70 1
- DIP5 7
-Net 21 "/ME2_HOME" "ME2_HOME"
- U5 27
- R80 2
- D14 2
-Net 22 "/ME2_FAULT" "ME2_FAULT"
- D9 2
- R75 2
- U5 18
-Net 23 "" ""
- U3 12
- RV3 2
- U3 13
-Net 24 "GND" "GND"
- C18 2
- C16 2
- P10 15
- D15 2
- C20 2
- C22 2
- C24 2
- R51 2
- R59 2
- R67 2
- P12 2
- P12 4
- P12 6
- R43 2
- P14 1
- C48 2
- R79 1
- R75 1
- R76 1
- R38 2
- R62 2
- R71 1
- R72 1
- R73 1
- R74 1
- R100 2
- R101 2
- R102 2
- R35 2
- R36 2
- R37 2
- R77 1
- P10 18
- P10 19
- P11 1
- P11 2
- R46 2
- R44 2
- R45 2
- R52 2
- P10 5
- P10 7
- P10 3
- P7 15
- R78 1
- R80 1
- C46 1
- C47 2
- P10 17
- P7 11
- P7 13
- P10 24
- P7 2
- P7 5
- P7 8
- P8 9
- U6 11
- U4 28
- U4 29
- C4 1
- U4 14
- RV1 3
- R13 1
- R12 1
- R4 1
- R9 1
- R8 1
- U2 14
- U2 28
- U2 29
- C2 1
- C27 2
- C53 2
- C51 2
- Q3 S
- R2 1
- Q4 S
- Q2 S
- C26 2
- Q1 S
- C50 2
- J1 5
- U1 14
- R7 1
- R6 1
- J1 4
- C1 1
- J1 6
- C36 2
- C37 2
- C38 2
- P5 6
- C42 2
- U6 18
- C17 2
- U1 29
- U1 28
- R1 1
- U7 6
- C39 1
- C19 2
- RV2 3
- C28 2
+ DIP5 1
+Net 6 "GND" "GND"
  C29 2
- U6 7
- C52 2
- U6 21
- U6 25
- U6 26
- U7 28
- U7 39
- C40 1
- U7 18
+ C28 2
+ Q1 S
+ R45 2
+ C19 2
+ C48 2
+ RV3 3
+ P12 6
+ P12 4
+ C30 2
+ P12 2
+ C31 2
+ P8 9
+ P7 5
  P6 2
+ P7 2
+ C51 2
  P6 1
+ RV4 3
+ R11 1
+ R10 1
+ P7 8
+ C32 2
+ C39 1
+ RV2 3
+ C33 2
+ P7 11
  C45 2
  C43 2
  C44 2
- U3 28
+ P7 15
+ P7 13
+ R1 1
+ U7 6
+ R74 1
+ R75 1
+ R12 1
+ R76 1
+ R77 1
+ R73 1
+ C27 2
+ R101 2
+ R100 2
+ R78 1
+ Q4 S
+ R99 2
+ U4 14
+ Q3 S
+ R70 2
+ R71 1
+ R72 1
+ R13 1
+ R60 2
+ C47 2
+ C26 2
+ RV1 3
  R61 2
- C3 1
- RV4 3
- U3 14
+ R62 2
+ R46 2
+ R69 2
+ R68 2
+ C46 1
+ R102 2
+ R54 2
+ R53 2
+ R52 2
+ R4 1
  C23 2
- C33 2
- C32 2
  R3 1
- R10 1
- R11 1
  C21 2
- R5 1
- U5 28
+ P14 1
+ P10 5
+ P10 3
+ Q2 S
+ P10 7
+ P10 18
+ P10 17
+ P10 15
+ R79 1
+ P10 24
+ R80 1
+ P10 19
+ U4 28
+ U4 29
+ C4 1
+ U1 29
+ U1 28
+ C1 1
  C5 1
- U5 29
- R14 1
  R15 1
+ U5 29
+ R6 1
+ U1 14
+ R7 1
+ R5 1
  C25 2
+ C50 2
+ C53 2
+ U5 28
+ R14 1
+ D15 2
+ C17 2
+ C52 2
+ U5 14
+ R37 2
+ R8 1
  RV5 3
+ R36 2
+ U3 28
+ U3 14
+ U6 18
+ C42 2
+ R35 2
+ R38 2
+ U2 14
+ R9 1
+ U7 28
+ U7 39
+ C40 1
+ R67 2
+ R59 2
+ R51 2
+ R43 2
+ U7 18
+ P11 2
+ U6 26
+ C3 1
+ P11 1
  U3 29
+ U6 25
+ U6 21
+ R44 2
+ U6 11
+ U6 7
+ U2 29
+ C24 2
+ J1 6
+ C37 2
+ C2 1
+ U2 28
+ C38 2
+ P5 6
+ C20 2
+ C22 2
+ C36 2
+ J1 4
+ R2 1
+ J1 5
  C35 2
  C34 2
- U5 14
- C31 2
- C30 2
- RV3 3
- R60 2
- R53 2
- R70 2
- R99 2
- R68 2
- R69 2
- R54 2
-Net 25 "" ""
- RV5 1
- U5 15
- C5 2
-Net 26 "/FAN" "FAN"
- U7 13
- R88 1
-Net 27 "/IOA" "IOA"
- U7 26
- P8 5
-Net 28 "/IOB" "IOB"
- U7 42
- P8 7
-Net 29 "/PWR_ON" "PWR_ON"
- P10 16
- U7 34
-Net 30 "/MIN_X" "MIN_X"
- U7 33
- P7 1
-Net 31 "/MIN_Z" "MIN_Z"
- U7 31
- P7 7
-Net 32 "/SDA" "SDA"
- U7 20
- P8 4
-Net 33 "/MX_AOUT2" "MX_AOUT2"
- P9 2
- U1 7
-Net 34 "/MX_BOUT2" "MX_BOUT2"
- U1 8
- P9 4
-Net 35 "/MY_AOUT2" "MY_AOUT2"
- P9 6
- U2 7
-Net 36 "/MY_BOUT2" "MY_BOUT2"
- P9 8
- U2 8
-Net 37 "/SCL" "SCL"
- U7 19
- P8 2
-Net 38 "/ME2_AOUT1" "ME2_AOUT1"
- P9 17
+ C18 2
+ C16 2
+Net 7 "/ME2_DIR" "ME2_DIR"
+ U7 41
+ U5 20
+Net 8 "/ME2_MODE1" "ME2_MODE1"
+ DIP5 3
+ R68 1
+ U5 25
+Net 9 "" ""
+ JP5 1
+ R20 2
+Net 10 "" ""
+ JP5 3
+ R5 2
+Net 11 "/ME2_AOUT1" "ME2_AOUT1"
  U5 5
-Net 39 "/ME2_AOUT2" "ME2_AOUT2"
- P9 18
+ P9 17
+Net 12 "/ME2_AOUT2" "ME2_AOUT2"
  U5 7
-Net 40 "/ME2_BOUT1" "ME2_BOUT1"
- P9 19
+ P9 18
+Net 13 "/ME2_BOUT1" "ME2_BOUT1"
  U5 10
-Net 41 "/ME2_BOUT2" "ME2_BOUT2"
+ P9 19
+Net 14 "/ME2_BOUT2" "ME2_BOUT2"
  U5 8
  P9 20
-Net 42 "" ""
- DIP5 2
+Net 15 "" ""
  R66 1
-Net 43 "" ""
- R63 1
- DIP5 8
-Net 44 "" ""
- DIP5 4
- R65 1
-Net 45 "" ""
- DIP5 6
- R64 1
-Net 46 "/ME1_ISENB" "ME1_ISENB"
- U4 9
- C33 1
- R13 2
-Net 47 "" ""
- U4 13
- U4 12
- RV4 2
-Net 48 "/ME1_ISENA" "ME1_ISENA"
- C32 1
- R12 2
- U4 6
-Net 49 "/MZ_FAULT" "MZ_FAULT"
- D3 2
- U3 18
- R73 2
-Net 50 "/MZ_MODE0" "MZ_MODE0"
- R51 1
- DIP3 1
- U3 24
-Net 51 "/MZ_MODE1" "MZ_MODE1"
- R52 1
- U3 25
- DIP3 3
-Net 52 "/MZ_MODE2" "MZ_MODE2"
- DIP3 5
- R53 1
- U3 26
-Net 54 "/MZ_DECAY" "MZ_DECAY"
- JP3 2
- U3 19
-Net 55 "" ""
- C3 2
- RV3 1
- U3 15
-Net 56 "/MZ_AOUT1" "MZ_AOUT1"
- P9 9
- U3 5
-Net 57 "/MZ_AOUT2" "MZ_AOUT2"
- P9 10
+ DIP5 2
+Net 16 "/ME2_STEP" "ME2_STEP"
+ U5 22
+ U7 40
+Net 17 "/ENABLE" "ENABLE"
+ R21 2
+ U1 21
+ U4 21
+ U2 21
+ U5 21
+ U3 21
+Net 18 "/ME2_HOME" "ME2_HOME"
+ R80 2
+ D14 2
+ U5 27
+Net 19 "/ME2_FAULT" "ME2_FAULT"
+ U5 18
+ R75 2
+ D9 2
+Net 20 "/ME2_DECAY" "ME2_DECAY"
+ JP5 2
+ U5 19
+Net 21 "" ""
+ U5 13
+ U5 12
+ RV5 2
+Net 23 "" ""
+ U3 12
+ U3 13
+ RV3 2
+Net 24 "/ME2_ISENA" "ME2_ISENA"
+ R14 2
+ U5 6
+ C34 1
+Net 25 "/MIN_Y" "MIN_Y"
+ P7 4
+ U7 32
+Net 26 "/SDA" "SDA"
+ P8 4
+ U7 20
+Net 27 "/FAN" "FAN"
+ R88 1
+ U7 13
+Net 28 "/IOA" "IOA"
+ U7 26
+ P8 5
+Net 29 "/IOB" "IOB"
+ P8 7
+ U7 42
+Net 30 "/PWR_ON" "PWR_ON"
+ U7 34
+ P10 16
+Net 31 "/MIN_X" "MIN_X"
+ U7 33
+ P7 1
+Net 32 "/MIN_Z" "MIN_Z"
+ P7 7
+ U7 31
+Net 33 "/SCL" "SCL"
+ U7 19
+ P8 2
+Net 34 "/MX_AOUT2" "MX_AOUT2"
+ U1 7
+ P9 2
+Net 35 "/MX_BOUT2" "MX_BOUT2"
+ P9 4
+ U1 8
+Net 36 "/MY_AOUT2" "MY_AOUT2"
+ P9 6
+ U2 7
+Net 37 "/MY_BOUT2" "MY_BOUT2"
+ P9 8
+ U2 8
+Net 38 "/MZ_AOUT2" "MZ_AOUT2"
  U3 7
-Net 58 "" ""
- R58 1
- DIP4 2
-Net 59 "" ""
- R57 1
- DIP4 4
-Net 60 "" ""
- R56 1
- DIP4 6
-Net 61 "" ""
- R55 1
- DIP4 8
-Net 62 "/ME1_AOUT2" "ME1_AOUT2"
+ P9 10
+Net 39 "/MZ_BOUT2" "MZ_BOUT2"
+ U3 8
+ P9 12
+Net 40 "/ME1_AOUT2" "ME1_AOUT2"
  P9 14
  U4 7
-Net 63 "/ME1_BOUT1" "ME1_BOUT1"
- P9 15
- U4 10
-Net 64 "/ME1_BOUT2" "ME1_BOUT2"
- U4 8
+Net 41 "/ME1_BOUT2" "ME1_BOUT2"
  P9 16
-Net 65 "" ""
- JP4 1
- R19 2
-Net 66 "" ""
- R4 2
- JP4 3
-Net 67 "/ME1_AOUT1" "ME1_AOUT1"
- U4 5
- P9 13
-Net 68 "/ME1_MODE0" "ME1_MODE0"
- DIP4 1
- U4 24
- R59 1
-Net 69 "/ME1_SLP" "ME1_SLP"
- R62 1
- U4 17
- DIP4 7
-Net 70 "/MZ_BOUT2" "MZ_BOUT2"
- P9 12
- U3 8
-Net 71 "/MZ_BOUT1" "MZ_BOUT1"
+ U4 8
+Net 42 "/ME2_ISENB" "ME2_ISENB"
+ U5 9
+ C35 1
+ R15 2
+Net 43 "/ME2_RST" "ME2_RST"
+ R30 1
+ U5 16
+Net 44 "/MX_BOUT1" "MX_BOUT1"
+ P9 3
+ U1 10
+Net 45 "/MX_AOUT1" "MX_AOUT1"
+ P9 1
+ U1 5
+Net 46 "/MZ_AOUT1" "MZ_AOUT1"
+ U3 5
+ P9 9
+Net 47 "/MZ_BOUT1" "MZ_BOUT1"
  U3 10
  P9 11
-Net 72 "" ""
- R50 1
- DIP3 2
-Net 73 "" ""
- DIP3 4
- R49 1
-Net 74 "" ""
- DIP3 6
- R48 1
-Net 75 "" ""
- R47 1
- DIP3 8
-Net 76 "" ""
- JP3 1
- R18 2
-Net 77 "" ""
- R3 2
- JP3 3
-Net 78 "/MZ_RST" "MZ_RST"
- R26 1
- U3 16
-Net 79 "/MZ_SLP" "MZ_SLP"
+Net 48 "/ME1_AOUT1" "ME1_AOUT1"
+ P9 13
+ U4 5
+Net 49 "/ME1_BOUT1" "ME1_BOUT1"
+ U4 10
+ P9 15
+Net 50 "/MY_AOUT1" "MY_AOUT1"
+ P9 5
+ U2 5
+Net 51 "/MY_BOUT1" "MY_BOUT1"
+ U2 10
+ P9 7
+Net 52 "" ""
+ R63 1
+ DIP5 8
+Net 53 "" ""
+ DIP5 4
+ R65 1
+Net 54 "/ME2_MODE2" "ME2_MODE2"
+ U5 26
+ DIP5 5
+ R69 1
+Net 55 "" ""
+ R64 1
+ DIP5 6
+Net 56 "/ME2_SLP" "ME2_SLP"
+ R70 1
+ DIP5 7
+ U5 17
+Net 58 "" ""
+ C3 2
+ U3 15
+ RV3 1
+Net 59 "/ME1_RST" "ME1_RST"
+ R28 1
+ U4 16
+Net 60 "" ""
+ C8 1
+ U3 1
+Net 61 "/MZ_SLP" "MZ_SLP"
  R54 1
  U3 17
  DIP3 7
-Net 80 "/MZ_HOME" "MZ_HOME"
+Net 62 "/MZ_HOME" "MZ_HOME"
  R78 2
- D12 2
  U3 27
-Net 81 "/MZ_STEP" "MZ_STEP"
+ D12 2
+Net 63 "/MZ_FAULT" "MZ_FAULT"
+ U3 18
+ D3 2
+ R73 2
+Net 64 "/MZ_MODE0" "MZ_MODE0"
+ DIP3 1
+ U3 24
+ R51 1
+Net 65 "/MZ_MODE1" "MZ_MODE1"
+ DIP3 3
+ U3 25
+ R52 1
+Net 66 "/MZ_MODE2" "MZ_MODE2"
+ DIP3 5
+ R53 1
+ U3 26
+Net 67 "/MZ_DECAY" "MZ_DECAY"
+ U3 19
+ JP3 2
+Net 68 "/MZ_RST" "MZ_RST"
+ R26 1
+ U3 16
+Net 69 "" ""
+ C8 2
+ U3 2
+Net 70 "" ""
+ C13 2
+ U3 3
+Net 71 "/MZ_ISENB" "MZ_ISENB"
+ C31 1
+ R11 2
+ U3 9
+Net 72 "/MZ_ISENA" "MZ_ISENA"
+ U3 6
+ C30 1
+ R10 2
+Net 73 "/MZ_DIR" "MZ_DIR"
+ U3 20
+ U7 24
+Net 74 "/MZ_STEP" "MZ_STEP"
  U7 25
  U3 22
+Net 75 "" ""
+ R56 1
+ DIP4 6
+Net 76 "" ""
+ DIP4 8
+ R55 1
+Net 77 "/ME1_MODE0" "ME1_MODE0"
+ DIP4 1
+ R59 1
+ U4 24
+Net 78 "/ME1_ISENB" "ME1_ISENB"
+ C33 1
+ U4 9
+ R13 2
+Net 79 "" ""
+ U4 13
+ RV4 2
+ U4 12
+Net 80 "/ME1_ISENA" "ME1_ISENA"
+ C32 1
+ U4 6
+ R12 2
+Net 81 "" ""
+ DIP3 6
+ R48 1
 Net 82 "" ""
- U3 1
- C8 1
+ DIP3 2
+ R50 1
 Net 83 "" ""
- U3 2
- C8 2
+ DIP3 4
+ R49 1
 Net 84 "" ""
- U3 3
- C13 2
-Net 85 "/MZ_DIR" "MZ_DIR"
- U7 24
- U3 20
+ DIP3 8
+ R47 1
+Net 85 "" ""
+ R18 2
+ JP3 1
 Net 86 "" ""
- R99 1
- Q1 G
- R82 2
+ R3 2
+ JP3 3
 Net 87 "" ""
- R84 2
- R100 1
- Q2 G
+ D6 1
+ R111 1
 Net 88 "" ""
- R86 2
- Q3 G
- R101 1
+ D4 1
+ R94 1
 Net 89 "" ""
- R102 1
- Q4 G
- R88 2
-Net 90 "/MY_MODE1" "MY_MODE1"
- R44 1
- DIP2 3
- U2 25
-Net 91 "/MY_MODE2" "MY_MODE2"
- U2 26
- R45 1
- DIP2 5
-Net 92 "/MY_SLP" "MY_SLP"
+ D5 1
+ R110 1
+Net 90 "" ""
+ D7 1
+ R112 1
+Net 91 "" ""
+ R97 2
+ D14 1
+Net 92 "" ""
+ R98 2
+ D15 1
+Net 93 "/MY_FAULT" "MY_FAULT"
+ D2 2
+ R72 2
+ U2 18
+Net 94 "/MY_HOME" "MY_HOME"
+ D11 2
+ R77 2
+ U2 27
+Net 95 "/MY_SLP" "MY_SLP"
  U2 17
  R46 1
  DIP2 7
-Net 93 "/MY_MODE0" "MY_MODE0"
- U2 24
- R43 1
- DIP2 1
-Net 94 "/VBUS" "VBUS"
- C38 1
- C36 1
- R91 2
- R90 2
- C37 1
- J1 1
- U6 4
- U6 20
-Net 95 "" ""
- JP6 2
- C41 1
-Net 96 "/RST" "RST"
- P14 2
- P5 5
- R113 2
- C49 2
- JP6 1
- U7 4
+Net 96 "" ""
+ R89 2
+ D9 1
 Net 97 "" ""
- R91 1
- D17 1
+ R81 2
+ D1 1
 Net 98 "" ""
- R90 1
- D16 1
+ D2 1
+ R83 2
 Net 99 "" ""
- D17 2
- U6 23
+ D3 1
+ R85 2
 Net 100 "" ""
- D16 2
- U6 22
+ D8 1
+ R87 2
+Net 101 "" ""
+ R92 2
+ D10 1
 Net 102 "" ""
- C41 2
- U6 2
-Net 103 "VPP" "VPP"
- P12 1
+ R93 2
+ D11 1
+Net 103 "" ""
+ D12 1
+ R95 2
+Net 104 "" ""
+ R96 2
+ D13 1
+Net 105 "" ""
+ R99 1
+ R82 2
+ Q1 G
+Net 106 "" ""
+ R84 2
+ Q2 G
+ R100 1
+Net 107 "" ""
+ R101 1
+ R86 2
+ Q3 G
+Net 108 "" ""
+ Q4 G
+ R102 1
+ R88 2
+Net 115 "/5V_ATX_SB" "5V_ATX_SB"
+ P10 9
+ JP7 1
+Net 116 "VPP" "VPP"
+ C23 1
  C14 1
  U4 11
- U3 4
- U1 4
- C11 1
- U1 11
- P12 3
- U5 11
- U5 4
- P12 5
- P4 2
- P3 2
- P2 2
- P1 2
- U3 11
- C17 1
- C24 1
- P11 3
- C19 1
- C13 1
- C22 1
- C20 1
- P11 4
- C21 1
- C45 1
- U4 4
- C18 1
- C16 1
- C25 1
+ U2 4
  U2 11
+ P1 2
+ C45 1
+ P2 2
+ P3 2
+ P4 2
+ C12 1
+ U1 11
+ C11 1
+ U1 4
+ C19 1
+ C17 1
+ U4 4
+ U5 11
+ C20 1
+ P11 3
+ C21 1
+ U5 4
  C15 1
- C23 1
+ C22 1
+ C24 1
+ U3 4
+ C25 1
+ P12 5
  P10 10
  P10 11
- U2 4
- C12 1
-Net 105 "" ""
- R21 1
- U7 23
-Net 109 "" ""
- R112 1
- D7 1
-Net 110 "" ""
- R94 1
- D4 1
-Net 111 "" ""
- R110 1
- D5 1
-Net 112 "" ""
- R111 1
- D6 1
-Net 113 "+5VA" "+5VA"
- C50 1
- L1 2
- C40 2
- R104 1
- R106 1
- U7 27
- C47 1
- R105 1
-Net 114 "" ""
+ P11 4
+ C18 1
+ U3 11
+ P12 1
+ C13 1
+ C16 1
+ P12 3
+Net 118 "/5V_ATX" "5V_ATX"
+ P10 6
+ P10 21
+ P10 4
+ P10 23
+ P10 22
+ JP7 3
+Net 119 "" ""
+ U6 2
+ C41 2
+Net 120 "" ""
+ D16 2
+ U6 22
+Net 121 "" ""
+ R90 1
+ D16 1
+Net 122 "" ""
+ R91 1
+ D17 1
+Net 123 "" ""
+ C41 1
+ JP6 2
+Net 124 "/RST" "RST"
+ JP6 1
+ P5 5
+ R113 2
+ U7 4
+ P14 2
+ C49 2
+Net 125 "/VBUS" "VBUS"
+ U6 20
+ C38 1
+ R91 2
+ U6 4
+ R90 2
+ C37 1
+ C36 1
+ J1 1
+Net 126 "" ""
  U7 29
  C46 2
-Net 116 "/MIN_Y" "MIN_Y"
- P7 4
- U7 32
-Net 117 "/HOTEND1_ON" "HOTEND1_ON"
- P1 1
- Q1 D
- D7 2
-Net 118 "/MISO" "MISO"
+Net 128 "" ""
+ U6 23
+ D17 2
+Net 129 "" ""
+ R21 1
+ U7 23
+Net 130 "/SCK" "SCK"
+ U7 3
+ P8 6
+ P5 3
+Net 131 "/MISO" "MISO"
  P8 8
  P5 1
  U7 2
-Net 119 "/MOSI" "MOSI"
+Net 132 "/MOSI" "MOSI"
  U7 1
  P8 10
  P5 4
-Net 120 "/SCK" "SCK"
- U7 3
- P5 3
- P8 6
-Net 121 "/MY_AOUT1" "MY_AOUT1"
- U2 5
- P9 5
-Net 122 "/MX_AOUT1" "MX_AOUT1"
- P9 1
- U1 5
-Net 123 "/MX_BOUT1" "MX_BOUT1"
- U1 10
- P9 3
-Net 124 "/MY_BOUT1" "MY_BOUT1"
- U2 10
- P9 7
-Net 125 "+5V" "+5V"
- R16 1
- R97 1
- R94 2
- R110 2
- U7 5
- R93 1
- R98 1
- R22 2
- R96 1
- R95 1
- C39 2
- R64 2
- R34 2
- R56 2
- R18 1
- R31 2
- R57 2
- R83 1
- R87 1
- R89 1
- R26 2
- R81 1
- R32 2
- R92 1
- L1 1
- R85 1
- R30 2
- R17 1
- C48 1
- R33 2
- R58 2
- R40 2
- R24 2
- R20 1
- R112 2
- R19 1
- R111 2
- R113 1
- R41 2
- P7 9
- R49 2
- R47 2
- R42 2
- P7 3
- U7 17
- U7 38
- R28 2
- P7 6
- R65 2
- R50 2
- R39 2
- R48 2
- R63 2
- JP7 2
- P8 1
- R66 2
- R55 2
- P5 2
-Net 126 "/5V_ATX" "5V_ATX"
- P10 4
- P10 21
- JP7 3
- P10 6
- P10 23
- P10 22
-Net 128 "/5V_ATX_SB" "5V_ATX_SB"
- P10 9
- JP7 1
-Net 131 "/HOTBED_ON" "HOTBED_ON"
+Net 133 "/HOTBED_ON" "HOTBED_ON"
  P3 1
- D5 2
  Q3 D
-Net 132 "/HOTEND2_ON" "HOTEND2_ON"
- D6 2
+ D5 2
+Net 134 "/HOTEND2_ON" "HOTEND2_ON"
  Q2 D
+ D6 2
  P2 1
-Net 133 "/SD_CS" "SD_CS"
+Net 135 "/SD_CS" "SD_CS"
  U7 30
  P8 3
-Net 134 "/E1_TEMP" "E1_TEMP"
- R104 2
- U7 37
- C51 1
- P7 10
-Net 135 "/E2_TEMP" "E2_TEMP"
- U7 36
- P7 12
+Net 136 "+5V" "+5V"
+ P7 3
+ P7 6
+ R31 2
+ R32 2
+ P8 1
+ P7 9
+ C48 1
+ R17 1
+ R30 2
+ C39 2
+ JP7 2
+ U7 5
+ R24 2
+ R16 1
+ R26 2
+ R28 2
+ R18 1
+ R98 1
+ R89 1
+ R64 2
+ R96 1
+ R19 1
+ R110 2
+ L1 1
+ R50 2
+ R49 2
+ R111 2
+ R94 2
+ R56 2
+ R93 1
+ R48 2
+ R66 2
+ R65 2
+ R57 2
+ R58 2
+ R92 1
+ R95 1
+ R81 1
+ R40 2
+ R42 2
+ R97 1
+ R113 1
+ R83 1
+ R41 2
+ U7 38
+ R87 1
+ R85 1
+ R20 1
+ R33 2
+ R63 2
+ R22 2
+ R55 2
+ U7 17
+ P5 2
+ R112 2
+ R47 2
+ R39 2
+ R34 2
+Net 138 "" ""
+ R32 1
+ DIP1 6
+Net 139 "/MY_MODE0" "MY_MODE0"
+ R43 1
+ U2 24
+ DIP2 1
+Net 140 "/E2_TEMP" "E2_TEMP"
  R105 2
  C52 1
-Net 136 "/BED_TEMP" "BED_TEMP"
- P7 14
+ P7 12
+ U7 36
+Net 141 "/E1_TEMP" "E1_TEMP"
+ C51 1
+ R104 2
+ U7 37
+ P7 10
+Net 142 "/BED_TEMP" "BED_TEMP"
  C53 1
+ P7 14
  R106 2
  U7 35
-Net 137 "" ""
- R1 2
- JP1 3
-Net 138 "" ""
- JP1 1
- R16 2
-Net 139 "/HOTEND1" "HOTEND1"
- R82 1
- U7 14
-Net 140 "/HOTEND2" "HOTEND2"
- R84 1
- U7 15
-Net 141 "/HOTBED" "HOTBED"
- R86 1
- U7 16
-Net 142 "/MY_DIR" "MY_DIR"
- U2 20
- U7 21
-Net 143 "/MY_STEP" "MY_STEP"
- U2 22
- U7 22
-Net 144 "/MX_DECAY" "MX_DECAY"
- U1 19
- JP1 2
+Net 143 "" ""
+ C49 1
+ P6 6
+Net 144 "/ME1_DIR" "ME1_DIR"
+ U4 20
+ U7 44
 Net 145 "/RXD" "RXD"
- P6 4
  U7 9
  U6 1
+ P6 4
 Net 146 "/TXD" "TXD"
  P6 5
- U7 10
  U6 5
+ U7 10
 Net 147 "/MX_DIR" "MX_DIR"
  U1 20
  U7 11
 Net 148 "/MX_STEP" "MX_STEP"
- U1 22
  U7 12
-Net 149 "" ""
+ U1 22
+Net 149 "/HOTEND1" "HOTEND1"
+ R82 1
+ U7 14
+Net 150 "/HOTEND2" "HOTEND2"
+ U7 15
+ R84 1
+Net 151 "/HOTBED" "HOTBED"
+ R86 1
+ U7 16
+Net 152 "/MY_DIR" "MY_DIR"
+ U2 20
+ U7 21
+Net 153 "/MY_STEP" "MY_STEP"
+ U7 22
+ U2 22
+Net 154 "" ""
+ U1 1
+ C6 1
+Net 155 "" ""
  U6 15
  J1 3
-Net 150 "" ""
- J1 2
+Net 156 "" ""
+ U1 2
+ C6 2
+Net 157 "" ""
  U6 16
-Net 151 "" ""
+ J1 2
+Net 158 "" ""
  C42 1
  U6 17
-Net 152 "/MX_ISENA" "MX_ISENA"
- R6 2
- U1 6
- C26 1
-Net 153 "/MX_ISENB" "MX_ISENB"
- C27 1
- U1 9
- R7 2
-Net 154 "/MX_RST" "MX_RST"
- U1 16
- R22 1
-Net 155 "/MX_SLP" "MX_SLP"
- DIP1 7
- U1 17
- R38 1
-Net 156 "/MX_HOME" "MX_HOME"
- D10 2
- R76 2
- U1 27
-Net 157 "/MX_FAULT" "MX_FAULT"
+Net 159 "/MX_FAULT" "MX_FAULT"
  R71 2
- D1 2
  U1 18
-Net 158 "/MX_MODE0" "MX_MODE0"
- U1 24
+ D1 2
+Net 160 "/MX_MODE0" "MX_MODE0"
  DIP1 1
+ U1 24
  R35 1
-Net 159 "/MX_MODE1" "MX_MODE1"
- DIP1 3
+Net 161 "/MX_MODE1" "MX_MODE1"
  U1 25
  R36 1
-Net 160 "/MX_MODE2" "MX_MODE2"
+ DIP1 3
+Net 162 "/MX_MODE2" "MX_MODE2"
  R37 1
  U1 26
  DIP1 5
-Net 161 "" ""
- U1 1
- C6 1
-Net 162 "" ""
- C6 2
- U1 2
-Net 163 "" ""
- C11 2
- U1 3
-Net 164 "" ""
- R98 2
- D15 1
+Net 163 "/MX_DECAY" "MX_DECAY"
+ U1 19
+ JP1 2
+Net 164 "/MX_HOME" "MX_HOME"
+ D10 2
+ U1 27
+ R76 2
 Net 165 "" ""
- D10 1
- R92 2
+ JP1 1
+ R16 2
 Net 166 "" ""
- R93 2
- D11 1
+ JP1 3
+ R1 2
 Net 167 "" ""
- R95 2
- D12 1
-Net 168 "" ""
- D13 1
- R96 2
-Net 169 "" ""
- R89 2
- D9 1
-Net 170 "" ""
- R97 2
- D14 1
-Net 171 "" ""
+ U1 3
+ C11 2
+Net 168 "/ME1_STEP" "ME1_STEP"
+ U4 22
+ U7 43
+Net 169 "/MX_ISENA" "MX_ISENA"
+ C26 1
+ R6 2
+ U1 6
+Net 170 "/MX_ISENB" "MX_ISENB"
+ U1 9
+ R7 2
+ C27 1
+Net 171 "/MX_RST" "MX_RST"
+ U1 16
+ R22 1
+Net 172 "/MX_SLP" "MX_SLP"
+ DIP1 7
+ U1 17
+ R38 1
+Net 173 "" ""
+ DIP1 8
+ R31 1
+Net 174 "" ""
  R34 1
  DIP1 2
-Net 172 "" ""
- DIP1 4
- R33 1
-Net 173 "" ""
- DIP1 6
- R32 1
-Net 174 "" ""
- R31 1
- DIP1 8
 Net 175 "" ""
- R83 2
- D2 1
+ R33 1
+ DIP1 4
 Net 176 "" ""
- R85 2
- D3 1
-Net 177 "" ""
- D8 1
- R87 2
-Net 178 "" ""
- P6 6
- C49 1
-Net 179 "/ME1_DIR" "ME1_DIR"
- U7 44
- U4 20
-Net 180 "/ME1_STEP" "ME1_STEP"
- U7 43
- U4 22
-Net 192 "" ""
+ U1 13
+ RV1 2
+ U1 12
+Net 188 "" ""
  U7 8
- C43 1
  X1 2
-Net 193 "" ""
+ C43 1
+Net 189 "" ""
  C44 1
  U7 7
  X1 1
-Net 194 "" ""
- R81 2
- D1 1
-Net 195 "" ""
- DIP2 4
- R41 1
-Net 196 "" ""
- DIP2 8
- R39 1
-Net 197 "" ""
- DIP2 2
- R42 1
-Net 198 "" ""
- DIP2 6
- R40 1
-Net 199 "/MY_ISENA" "MY_ISENA"
- U2 6
+Net 190 "/MY_ISENA" "MY_ISENA"
  R8 2
+ U2 6
  C28 1
-Net 200 "/MY_ISENB" "MY_ISENB"
+Net 191 "/MY_ISENB" "MY_ISENB"
+ U2 9
  R9 2
  C29 1
- U2 9
-Net 201 "" ""
- U2 15
- C2 2
- RV2 1
-Net 202 "/MY_HOME" "MY_HOME"
- R77 2
- U2 27
- D11 2
-Net 203 "/MY_FAULT" "MY_FAULT"
- D2 2
- U2 18
- R72 2
-Net 204 "" ""
- C7 1
- U2 1
-Net 205 "" ""
- R17 2
- JP2 1
-Net 206 "/MY_DECAY" "MY_DECAY"
+Net 192 "/MY_MODE2" "MY_MODE2"
+ DIP2 5
+ U2 26
+ R45 1
+Net 193 "" ""
+ U2 12
+ RV2 2
+ U2 13
+Net 194 "/MY_RST" "MY_RST"
+ U2 16
+ R24 1
+Net 195 "" ""
+ U4 1
+ C9 1
+Net 196 "" ""
+ C9 2
+ U4 2
+Net 197 "" ""
+ U4 3
+ C14 2
+Net 198 "/MY_MODE1" "MY_MODE1"
+ U2 25
+ R44 1
+ DIP2 3
+Net 199 "/MY_DECAY" "MY_DECAY"
  U2 19
  JP2 2
-Net 207 "" ""
+Net 200 "" ""
+ JP2 1
+ R17 2
+Net 201 "" ""
  JP2 3
  R2 2
-Net 208 "" ""
+Net 202 "" ""
  C7 2
  U2 2
-Net 209 "" ""
+Net 203 "" ""
  C12 2
  U2 3
+Net 204 "" ""
+ R41 1
+ DIP2 4
+Net 205 "" ""
+ R42 1
+ DIP2 2
+Net 206 "" ""
+ DIP2 8
+ R39 1
+Net 207 "" ""
+ DIP2 6
+ R40 1
+Net 208 "/ME1_FAULT" "ME1_FAULT"
+ U4 18
+ D8 2
+ R74 2
+Net 209 "/ME1_HOME" "ME1_HOME"
+ U4 27
+ R79 2
+ D13 2
 Net 210 "/ME1_MODE2" "ME1_MODE2"
  R61 1
  U4 26
  DIP4 5
 Net 211 "/ME1_DECAY" "ME1_DECAY"
- U4 19
  JP4 2
-Net 212 "/ME1_MODE1" "ME1_MODE1"
- DIP4 3
- U4 25
- R60 1
-Net 213 "/ME1_RST" "ME1_RST"
- R28 1
- U4 16
-Net 214 "/ME1_HOME" "ME1_HOME"
- U4 27
- D13 2
- R79 2
-Net 215 "/ME1_FAULT" "ME1_FAULT"
- R74 2
- D8 2
- U4 18
-Net 216 "" ""
- C9 2
- U4 2
-Net 217 "" ""
+ U4 19
+Net 212 "" ""
+ JP4 3
+ R4 2
+Net 213 "" ""
  RV4 1
- U4 15
  C4 2
+ U4 15
+Net 214 "" ""
+ R58 1
+ DIP4 2
+Net 215 "/ME1_MODE1" "ME1_MODE1"
+ U4 25
+ DIP4 3
+ R60 1
+Net 216 "" ""
+ R57 1
+ DIP4 4
+Net 217 "/ME1_SLP" "ME1_SLP"
+ R62 1
+ U4 17
+ DIP4 7
 Net 218 "" ""
- U4 1
- C9 1
-Net 219 "" ""
- U4 3
- C14 2
+ JP4 1
+ R19 2
 Net 220 "" ""
- U2 12
- RV2 2
- U2 13
-Net 221 "/MY_RST" "MY_RST"
- R24 1
- U2 16
-Net 223 "/FAN_ON" "FAN_ON"
+ C7 1
+ U2 1
+Net 221 "" ""
+ C1 2
+ RV1 1
+ U1 15
+Net 222 "/FAN_ON" "FAN_ON"
  P4 1
  Q4 D
  D4 2
-Net 224 "" ""
- RV1 1
- C1 2
- U1 15
+Net 223 "/HOTEND1_ON" "HOTEND1_ON"
+ Q1 D
+ D7 2
+ P1 1
 Net 225 "" ""
- RV1 2
- U1 13
- U1 12
+ U2 15
+ RV2 1
+ C2 2
+Net 226 "+5VA" "+5VA"
+ L1 2
+ C50 1
+ R104 1
+ R106 1
+ U7 27
+ C47 1
+ C40 2
+ R105 1
 }
 #End

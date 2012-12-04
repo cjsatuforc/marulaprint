@@ -1,4 +1,4 @@
-Cmp-Mod V01 Created by CvPcb (2012-10-20 BZR 3721)-testing date = Thu 15 Nov 2012 11:09:01 SAST
+Cmp-Mod V01 Created by CvPcb (2012-10-20 BZR 3721)-testing date = Fri 23 Nov 2012 06:03:16 SAST
 
 BeginCmp
 TimeStamp = /506E8B5D;
@@ -652,10 +652,10 @@ IdModule  = IDC-BOX-HEADER-20-WAY;
 EndCmp
 
 BeginCmp
-TimeStamp = /5083EFD3;
+TimeStamp = /50AF08A0;
 Reference = P10;
-ValeurCmp = MOLEX-39-28-1243;
-IdModule  = MINIFIT-24;
+ValeurCmp = MINIFIT-24-WAY;
+IdModule  = MINIFIT-24-REV2;
 EndCmp
 
 BeginCmp
